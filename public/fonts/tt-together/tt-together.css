@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TTTogether';
+    src: local('TT투게더'),
+    url('woff2/tt-together.woff2') format('woff2'),
+    url('woff/tt-together.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
