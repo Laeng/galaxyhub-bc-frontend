@@ -23,15 +23,20 @@ export default async function Home({params}: props) {
         <>
             <HeroSection lang={lang}/>
             <StorySection lang={lang}/>
-            <div className={classNames(
+            <div id={'introduce'} className={classNames(
                 'bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900'
             )}>
-
                 <FeatureSection lang={lang}/>
             </div>
-            <SponsorUsersSection lang={lang}/>
-            <RegisterNowSection lang={lang}/>
-            <FaqSection lang={lang}/>
+            <div id={'supporters'}>
+                <SponsorUsersSection lang={lang}/>
+            </div>
+            <div>
+                <RegisterNowSection lang={lang}/>
+            </div>
+            <div id={'faq'}>
+                <FaqSection lang={lang}/>
+            </div>
             <div className={classNames(
                 'pb-16'
             )}>

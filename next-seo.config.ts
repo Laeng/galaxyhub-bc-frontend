@@ -2,7 +2,7 @@ import type { NextSeoProps } from 'next-seo';
 
 export const NEXT_SEO_DEFAULT: NextSeoProps = {
     title: '바 시티즌 코리아',
-    description: '한국에서 스타 시티즌을 좋아하는 사람들의 모임. #스타시티즌 #바시티즌',
+    description: '스타 시티즌을 좋아하는 사람들의 모임. #스타시티즌 #바시티즌',
     openGraph: {
         type: 'website',
         locale: 'ko_KR',

@@ -2,17 +2,17 @@ import {ReactNode} from "react";
 import classNames from "classnames";
 
 interface props {
-    children?: ReactNode,
     badge?: string,
     title?: string,
-    description?: string
+    description?: string,
+    children?: ReactNode
 }
 
 export default function CenterHeaderContentSection({
-                                                       children = <></>,
                                                        badge = '',
                                                        title = '',
-                                                       description = ''
+                                                       description = '',
+                                                       children = <></>
 }: props) {
     return (
         <section className={classNames(

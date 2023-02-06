@@ -49,11 +49,19 @@ export interface langType {
         sponsor_fleets: {
             description: string
         }
+    },
+    footer: {
+        title: string,
+        description: string[],
+        copyright: string,
     }
     assets: {
+        title: string,
+        menu: linkType[],
         buttons: {
-            discord: buttonType,
-            pre_registration: buttonType
+            bar_citizen_korea: linkType,
+            discord: linkType,
+            pre_registration: linkType
         }
     }
 }
@@ -69,7 +77,7 @@ export interface faqType {
     answer: string
 }
 
-interface buttonType {
+interface linkType {
     title: string,
     url: string
 }

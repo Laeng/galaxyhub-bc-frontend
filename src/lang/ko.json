@@ -47,12 +47,12 @@
     "sponsor_users": {
       "badge": "바 시티즌 후원자",
       "title": "후원해주신 분들이에요.",
-      "description": "대한민국의 바 시티즌을 위해 도와주신 분들의 응원의 메세지에요."
+      "description": "대한민국의 바 시티즌을 위해 도와주신 분들의 한마디에요."
     },
     "register_now": {
       "contents": {
         "title": [
-          "바 시티즌 코리아 2023",
+          "바 시티즌 코리아",
           "지금 바로 등록하세요!"
         ],
         "description": [
@@ -76,8 +76,34 @@
       "description": "대한민국 스타 시티즌 함대에서 도움을 주셨어요."
     }
   },
+  "footer": {
+    "title": "바 시티즌 코리아",
+    "description": [
+      "본 웹사이트는 갤럭시허브의 지원을 받아 운영되며 Laeng에 의해 만들어졌습니다.",
+      "일부 글꼴는 주식회사 투게더그룹에서 제작한 TT 투게더체가 사용되었습니다."
+    ],
+    "copyright": "바 시티즌 코리아에 게재된 내용에 대한 저작권은 바 시티즌 코리아 운영팀에게 있으며 사진, 영상과 같은 컨텐츠의 경우 컨텐츠 제공자에게 있습니다."
+  },
   "assets": {
+    "menu": [
+      {
+        "title": "소개",
+        "url": "/ko#introduce"
+      },
+      {
+        "title": "후원자",
+        "url": "/ko#supporters"
+      },
+      {
+        "title": "자주하는 질문",
+        "url": "/ko#faq"
+      }
+    ],
     "buttons": {
+      "bar_citizen_korea": {
+        "title": "바 시티즌 코리아",
+        "url": "/ko"
+      },
       "discord": {
         "title": "디스코드",
         "url": "#"

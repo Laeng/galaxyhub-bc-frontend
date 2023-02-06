@@ -63,7 +63,7 @@
     },
     "faq": {
       "badge": "FAQ",
-      "title": "Frequently Asked Questions",
+      "title": "Frequently Asked Questions.",
       "description": "Here are answers to questions many of peoples have asked.",
       "contents": {
         "faq": [],
@@ -73,11 +73,37 @@
       }
     },
     "sponsor_fleets": {
-      "description": "The Korean Star Citizen fleet helped."
+      "description": "The Korean Star Citizen organizations helped this event."
     }
   },
+  "footer": {
+    "title": "Bar Citizen Korea",
+    "description": [
+      "This website is supported by GalaxyHub and developed by Laeng.",
+      "Some fonts used TT Together font produced by Together Group Co., Ltd."
+    ],
+    "copyright": "The copyright for the content posted on Bar Citizen Korea belongs to the Bar Citizen Korea team, and the content provider owns the contents such as photos and videos."
+  },
   "assets": {
+    "menu": [
+      {
+        "title": "Introduce",
+        "url": "/en#introduce"
+      },
+      {
+        "title": "Supporters",
+        "url": "/en#supporters"
+      },
+      {
+        "title": "FAQ",
+        "url": "/en#faq"
+      }
+    ],
     "buttons": {
+      "bar_citizen_korea": {
+        "title": "Bar Citizen Korea",
+        "url": "/en"
+      },
       "discord": {
         "title": "Discord",
         "url": "#"
