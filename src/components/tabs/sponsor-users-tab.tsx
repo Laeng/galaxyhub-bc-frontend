@@ -32,6 +32,7 @@ export default function SponsorUsersTab({sponsors}: props) {
         <PillsTab tabs={tabs}
                   tabClassName={classNames(
                       'hidden',
+                      'md:pb-4 md:block md:flex md:justify-start',
                       'lg:pb-8 lg:block lg:flex lg:justify-center'
                   )}
                   contentsClassName={classNames(
@@ -68,7 +69,7 @@ function reactNodeConverter(sponsorList: sponsorListType): ReactNode {
 
     return sponsorList.sponsors.map((sponsor) => (
         <div key={hash(sponsor.name)} className={classNames(
-            'rounded-xl border border-gray-300 p-4'
+            'p-4 rounded-xl border border-gray-300 dark:border-gray-700'
         )}>
             <h4 className={classNames(
                 'font-bold'

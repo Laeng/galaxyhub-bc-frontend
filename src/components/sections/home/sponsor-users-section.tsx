@@ -1,8 +1,12 @@
 import CenterHeaderContentSection from "@/components/sections/center-header-content-section";
 import classNames from "classnames";
 import SponsorUsersTab, {sponsorListType} from "@/components/tabs/sponsor-users-tab";
+import {langType} from "@/lang/langType";
 
-export default function SponsorUserSection() {
+interface props {
+    lang: langType
+}
+export default function SponsorUsersSection({lang}: props) {
     const sponsors: sponsorListType[] = [
         {
             year: 2023,
@@ -93,9 +97,9 @@ export default function SponsorUserSection() {
     ];
 
     return (
-        <CenterHeaderContentSection title={'후원자를 소개합니다.'}
-                                    description={'대한민국의 바 시티즌을 위해 후원해주신 분들입니다.'}
-                                    badge={'바 시티즌 후원자'}>
+        <CenterHeaderContentSection title={lang.main.sponsor_users.title}
+                                    description={lang.main.sponsor_users.description}
+                                    badge={lang.main.sponsor_users.badge}>
             <div className={classNames(
                 'w-full',
                 'lg:-mt-10'

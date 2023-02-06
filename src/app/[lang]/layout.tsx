@@ -11,7 +11,7 @@ export default function RootLayout({children}: { children: ReactNode }) {
         <head/>
         <body>
         <main className={classNames(
-            'relative flex flex-col min-h-screen bg-white dark:bg-black antialiased '
+            'relative flex flex-col min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white antialiased'
         )}>
             <HeaderSection/>
             {children}

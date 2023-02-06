@@ -1,18 +1,22 @@
-'use client'
-
 import CenterHeaderContentSection from "@/components/sections/center-header-content-section";
 import {ReactNode, useState} from "react";
 import classNames from "classnames";
 import hash from "@/utils/hash";
 import BasicAccordion from "@/components/accordions/basic-accordion";
 import LinkButton from "@/components/bottons/link-button";
+import {langType} from "@/lang/langType";
 
 interface faqType {
     question: string,
     answer: string
 }
-export default function FaqSection() {
-    const [faqs, setFaqs] = useState<faqType[]>([
+
+interface props {
+    lang: langType
+}
+
+export default function FaqSection({lang}: props) {
+    lang.main.faq.contents.faq.push(
         {
             question: '여러분의 후원을 기다립니다.',
             answer: '더 풍성한 바 시티즌을 위해 후원을 모금하고 있어요. 후원에 관심이 있으시다면 디스코드로 문의해 주세요.',
@@ -21,18 +25,18 @@ export default function FaqSection() {
             question: '모든 문의는 디스코드를 통해 받고 있어요!',
             answer: '바 시티즌 코리아의 디스코드로 문의해 주세요.',
         },
-    ]);
+    )
 
     return (
-        <CenterHeaderContentSection title={'궁금한 것이 있다면? 여기 주목!'}
-                                    description={'여기에 많은 분들이 해주신 질문에 대한 답이 있어요.'}
-                                    badge={'자주하는 질문'}
+        <CenterHeaderContentSection title={lang.main.faq.title}
+                                    description={lang.main.faq.description}
+                                    badge={lang.main.faq.badge}
         >
             <div>
                 <div className={classNames(
-                    'divide-y divide-gray-500 border-y border-gray-500'
+                    'divide-y divide-gray-300 dark:divide-gray-700 border-y border-gray-300 dark:border-gray-700'
                 )}>
-                    {faqs.map((faq, id) => (
+                    {lang.main.faq.contents.faq.map((faq, id) => (
                         <BasicAccordion question={faq.question} key={hash(faq.question)}>
                             {faq.answer}
                         </BasicAccordion>
@@ -41,22 +45,22 @@ export default function FaqSection() {
                 <div className={classNames(
                 )}>
                     <div className={classNames(
-                        'p-4 mt-4 flex flex-col items-center border-2 border-black border-dashed rounded-2xl',
-                        'lg:px-0 lg:py-4 lg:mt-0 lg:flex-row lg:justify-between lg:items-center lg:space-y-0 lg:border-x-0 lg:border-t-0 lg:border-b lg:border-gray-500 lg:border-solid lg:rounded-none'
+                        'p-4 mt-4 flex flex-col items-center border-2 border-black dark:border-gray-700 border-dashed rounded-2xl',
+                        'lg:px-0 lg:py-4 lg:mt-0 lg:flex-row lg:justify-between lg:items-center lg:space-y-0 lg:border-x-0 lg:border-t-0 lg:border-b lg:border-solid lg:rounded-none lg:border-gray-300 dark:lg:border-gray-700'
                     )}>
                         <p className={classNames(
                             'font-medium text-center',
                             'lg:text-left'
                         )}>
-                            여러분의 문의가 자주하는 질문에서 찾을 수 없다면 디스코드로 문의해주세요!
+                            {lang.main.faq.contents.contacts.description}
                         </p>
                         <div className={classNames(
                             'mt-4 mb-2'
                         )}>
-                            <LinkButton href={'#'} className={classNames(
+                            <LinkButton href={lang.assets.buttons.discord.url} className={classNames(
                                 'btn btn-indigo bg-discord rounded-lg'
                             )}>
-                                디스코드
+                                {lang.assets.buttons.discord.title}
                             </LinkButton>
                         </div>
                     </div>

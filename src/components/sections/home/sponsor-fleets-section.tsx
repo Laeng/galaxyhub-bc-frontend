@@ -1,7 +1,12 @@
 import classNames from "classnames";
 import Image from "next/image";
+import {langType} from "@/lang/langType";
 
-export function SponsorFleetsSection() {
+interface props {
+    lang: langType
+}
+
+export function SponsorFleetsSection({lang}: props) {
     return (
         <section className={classNames(
             'container py-16'
@@ -10,10 +15,10 @@ export function SponsorFleetsSection() {
                 'flex flex-col items-center space-y-8'
             )}>
                 <h4 className={classNames(classNames(
-                    'font-medium text-gray-600 text-center',
+                    'font-medium text-gray-600 dark:text-gray-300 text-center',
                     'lg:w-1/2'
                 ))}>
-                    대한민국의 스타 시티즌 함대가 함께합니다.
+                    {lang.main.sponsor_fleets.description}
                 </h4>
                 <div className={classNames(
                     'flex justify-center items-center space-x-8',
@@ -23,7 +28,7 @@ export function SponsorFleetsSection() {
                            alt={'shatagon fleet logo'}
                            height={'490'} width={'490'}
                            className={classNames(
-                               'invert w-16 h-16',
+                               'invert dark:invert-0 w-16 h-16',
                                'lg:w-24 lg:h-24'
                            )}
                            priority

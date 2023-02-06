@@ -1,8 +1,20 @@
 import classNames from "classnames";
 import RegisterDiscordButtons from "@/components/bottons/register-discord-buttons";
 import NameTag from "@/components/brands/name-tag";
+import {langType} from "@/lang/langType";
+import hash from "@/utils/hash";
 
-export default function RegisterNowSection() {
+interface props {
+    lang: langType
+}
+
+export default function RegisterNowSection({lang}: props) {
+
+    lang.main.register_now.contents.description.push(
+        '원활한 행사 진행을 위하여 만 19세 이상 성인만 참여하실 수 있으며 한국어로 진행됩니다.',
+        '현재 사전 등록을 진행 중에 있으며 날짜와 장소는 변경될 수 있습니다. 참가 신청이 시작되면 연락드리겠습니다.'
+    );
+
     return (
         <section className={classNames(
             'container py-8',
@@ -24,44 +36,28 @@ export default function RegisterNowSection() {
                             'font-together text-2xl',
                             'lg:text-4xl lg:space-y-4'
                         )}>
-                            <li>
-                                <p>
-                                    바 시티즌 코리아 2023
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    지금 바로 등록하세요!
-                                </p>
-                            </li>
+                            {lang.main.register_now.contents.title.map(part => (
+                                <li key={hash(part)}>
+                                    <p>
+                                        {part}
+                                    </p>
+                                </li>
+                            ))}
                         </ul>
                         <ul className={classNames(
-                            'font-medium leading-relaxed space-y-2'
+                            'leading-relaxed space-y-2',
                         )}>
-                            <li>
-                                <p>
-                                    2023년 개최되는 바 시티즌 코리아는 더 많은 분들과 함께합니다. 더 넓은 공간에서 친구를 만나거나 새로 사귀어 보세요.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    작년과 같이 올해에도 클라우드 임페리움 게임즈의 직원이 함께 할 예정이니 많은 관심 부탁드립니다!
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    본 행사는 한국어로 진행되며 통역 서비스를 제공하지 않습니다.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    사전 등록 마감: 2023.3.20. 20:00
-                                </p>
-                            </li>
+                            {lang.main.register_now.contents.description.map(part => (
+                                <li key={hash(part)}>
+                                    <p>
+                                        {part}
+                                    </p>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
-                    <RegisterDiscordButtons className={classNames(
+                    <RegisterDiscordButtons lang={lang} className={classNames(
                         'mt-auto pt-6'
                     )}/>
                 </div>

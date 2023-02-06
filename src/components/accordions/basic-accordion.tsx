@@ -22,7 +22,7 @@ export default function BasicAccordion({children = <></>, question}: props) {
             )}>
                 <p className={classNames({
                     'font-medium py-4': true,
-                    'text-blue-700': isOpen
+                    'text-blue-700 dark:text-blue-500': isOpen
                 })}>
                     {question}
                 </p>

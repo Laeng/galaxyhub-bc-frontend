@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function FooterSection() {
     return (
         <div className={classNames(
-            'mt-16 py-24 bg-gray-800'
+            'mt-auto py-24 bg-gray-800'
         )}>
             <div className={classNames(
                 'flex justify-center container'

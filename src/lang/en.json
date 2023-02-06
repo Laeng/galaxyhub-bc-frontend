@@ -1,5 +1,91 @@
 {
-  "products": {
-    "cart": "Add to Cart"
+  "main": {
+    "hero": {
+      "contents": {
+        "title": [
+          "Korea",
+          "Star Citizen",
+          "Event"
+        ],
+        "description": [],
+        "info": {
+          "datetime": "",
+          "place": "",
+          "price": ""
+        }
+      }
+    },
+    "story": {
+      "contents": {
+        "description": "Bar Citizen was first held in 2015 as an event for Star Citizen lovers to gather and enjoy together. Bar Citizen, hosted in korea, was started in 2019 and has been held ever since. A delicious dinner and drinks are served in a comfortable space, where participants can talk about various Star Citizen news and build friendship."
+      }
+    },
+    "features": {
+      "badge": "Introduce",
+      "title": "Is this your first time?",
+      "description": "Let me tell you what you can do at Bar Citizen Korea!",
+      "contents": {
+        "description": [
+          {
+            "title": "Suppertime",
+            "description1": "Meat devotee and event host Shatagon's curated dinner will give you a good start.",
+            "description2": "There are no plans to prepare vegetarian meals. If you are vegetarian for health or religious reasons, please prepare a separate lunch box."
+          },
+          {
+            "title": "Talk about game",
+            "description1": "You can talk about Star Citizen and share tips with each other.",
+            "description2": "If you ever meet a rival, please let the staff know. Our staff will help you achieve your revenge through some board games."
+          },
+          {
+            "title": "Build friendship",
+            "description1": "Stop playing alone. Make new friends through board games.",
+            "description2": "For smooth event progress, only adults over 19 years of age can participate, and your lovely pets are not allowed to enter the venue."
+          }
+        ]
+      }
+    },
+    "sponsor_users": {
+      "badge": "Supporters",
+      "title": "These are the people who supported event.",
+      "description": "This is a message of support from those who helped Bar Citizen Korea."
+    },
+    "register_now": {
+      "contents": {
+        "title": [
+          "Bar Citizen Korea",
+          "Register Now!"
+        ],
+        "description": [
+          "Bar Citizen Korea to be held in 2023 is with more people. Meet friends or make new friends in a larger space.",
+          "Just like last year, the staff of Cloud Imperium Games will be joining us this year too!"
+        ]
+      }
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently Asked Questions",
+      "description": "Here are answers to questions many of peoples have asked.",
+      "contents": {
+        "faq": [],
+        "contacts": {
+          "description": "If you can't find your question in our FAQ, please ask us on Discord!"
+        }
+      }
+    },
+    "sponsor_fleets": {
+      "description": "The Korean Star Citizen fleet helped."
+    }
+  },
+  "assets": {
+    "buttons": {
+      "discord": {
+        "title": "Discord",
+        "url": "#"
+      },
+      "pre_registration": {
+        "title": "Pre-registration",
+        "url": "#"
+      }
+    }
   }
 }

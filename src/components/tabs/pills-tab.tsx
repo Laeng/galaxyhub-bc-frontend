@@ -30,7 +30,7 @@ export default function PillsTab({tabs, tabClassName = '', contentsClassName = '
                             {({selected}) => (
                                 <button  className={classNames({
                                     'btn-blue': selected,
-                                    'text-gray-600 hover:text-gray-800': !selected,
+                                    'text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200': !selected,
                                     'btn px-3 py-2 rounded-md': true
                                 })}>
                                     { tab.title }
@@ -48,7 +48,7 @@ export default function PillsTab({tabs, tabClassName = '', contentsClassName = '
                         <Tab.Panel key={hash(id.toString() + '-content')}>
                             <ResponsiveMasonry columnsCountBreakPoints={{
                                 640: 1,
-                                768: 1,
+                                768: 2,
                                 1024: 2,
                                 1280: 3,
                                 1536: 3

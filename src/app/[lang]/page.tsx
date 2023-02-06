@@ -6,7 +6,8 @@ import {SponsorFleetsSection} from "@/components/sections/home/sponsor-fleets-se
 import RegisterNowSection from "@/components/sections/home/register-now-section";
 import FeatureSection from "@/components/sections/home/feature-section";
 import FaqSection from "@/components/sections/home/faq-section";
-import SponsorUserSection from "@/components/sections/home/sponsor-user-section";
+import SponsorUsersSection from "@/components/sections/home/sponsor-users-section";
+import {langType} from "@/lang/langType";
 
 
 interface props {
@@ -16,22 +17,26 @@ interface props {
 }
 
 export default async function Home({params}: props) {
-    const lang = await Lang(params.lang);
+    const lang: langType = await Lang(params.lang);
 
     return (
         <>
-            <HeroSection/>
-            <StorySection/>
+            <HeroSection lang={lang}/>
+            <StorySection lang={lang}/>
             <div className={classNames(
-                'bg-gradient-to-b from-gray-50 to-white'
+                'bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900'
             )}>
 
-                <FeatureSection/>
+                <FeatureSection lang={lang}/>
             </div>
-            <SponsorUserSection/>
-            <RegisterNowSection/>
-            <FaqSection/>
-            <SponsorFleetsSection/>
+            <SponsorUsersSection lang={lang}/>
+            <RegisterNowSection lang={lang}/>
+            <FaqSection lang={lang}/>
+            <div className={classNames(
+                'pb-16'
+            )}>
+                <SponsorFleetsSection lang={lang}/>
+            </div>
         </>
     )
 }

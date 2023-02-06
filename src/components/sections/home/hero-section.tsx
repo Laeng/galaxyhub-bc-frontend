@@ -1,8 +1,25 @@
 import classNames from "classnames";
 import RegisterDiscordButtons from "@/components/bottons/register-discord-buttons";
 import Image from "next/image";
+import {langType} from "@/lang/langType";
+import hash from "@/utils/hash";
 
-export default function HeroSection() {
+interface props {
+    lang: langType
+}
+
+export default function HeroSection({lang}: props) {
+    lang.main.hero.contents.description.push(
+        '원활한 행사 진행을 위하여 만 19세 이상 성인만 참여하실 수 있으며 한국어로 진행됩니다.',
+        '현재 사전 등록을 진행 중에 있으며 날짜와 장소는 변경될 수 있습니다. 참가 신청이 시작되면 연락드리겠습니다.'
+    )
+
+    lang.main.hero.contents.info = {
+        datetime: '2023.07.01. KST 18:00',
+        place: '서울 (예정)',
+        price: '참가비 70,000원 이상'
+    }
+
     return (
         <section className={classNames(
             'container'
@@ -19,21 +36,13 @@ export default function HeroSection() {
                         'font-together text-6xl',
                         'lg:text-8xl lg:space-y-8'
                     )}>
-                        <li className={classNames(
-                            'float-none'
-                        )}>
-                            대한민국
-                        </li>
-                        <li className={classNames(
-                            'float-none'
-                        )}>
-                            스타 시티즌
-                        </li>
-                        <li className={classNames(
-                            'float-none'
-                        )}>
-                            모임
-                        </li>
+                        {lang.main.hero.contents.title.map(part => (
+                            <li key={hash(part)} className={classNames(
+                                'float-none'
+                            )}>
+                                {part}
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
@@ -47,7 +56,7 @@ export default function HeroSection() {
                     )}>
                         <div className={classNames(
                             '',
-                            'lg:border-l-4 lg:border-black'
+                            'lg:border-l-4 lg:border-black lg:dark:border-white'
                         )}>
                             <ul className={classNames(
                                 'font-bold',
@@ -57,39 +66,37 @@ export default function HeroSection() {
                                     'text-2xl',
                                     'lg:text-5xl'
                                 )}>
-                                    2023.07.01. KST 18:00
+                                    {lang.main.hero.contents.info.datetime}
                                 </li>
                                 <li className={classNames(
                                     'text-xl',
                                     'lg:text-3xl'
                                 )}>
-                                    서울 (예정)
+                                    {lang.main.hero.contents.info.place}
                                 </li>
                                 <li className={classNames(
                                     'text-xl',
                                     'lg:text-3xl'
                                 )}>
-                                    참가비 70,000원 이상
+                                    {lang.main.hero.contents.info.price}
                                 </li>
                             </ul>
                         </div>
                         <ul className={classNames(
                             'space-y-2 text-sm'
                         )}>
-                            <li className={classNames(
-                                ''
-                            )}>
-                                원활한 행사 진행을 위하여 만 19세 이상 성인만 참여하실 수 있으며 한국어로 진행됩니다.
-                            </li>
-                            <li className={classNames(
-                                ''
-                            )}>
-                                현재 사전 등록을 진행 중에 있으며 날짜와 장소는 변경될 수 있습니다. 참가 신청이 시작되면 연락드리겠습니다.
-                            </li>
+                            {lang.main.hero.contents.description.map(part => (
+                                <li key={hash(part)} className={classNames(
+                                    ''
+                                )}>
+                                    {part}
+                                </li>
+
+                            ))}
                         </ul>
                     </div>
 
-                    <RegisterDiscordButtons className={classNames(
+                    <RegisterDiscordButtons lang={lang} className={classNames(
                         'mt-auto pt-6'
                     )}/>
                 </div>
