@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^0.2.0",
     "@headlessui/react": "^1.7.7",
     "@headlessui/tailwindcss": "^0.1.2",
     "@heroicons/react": "^2.0.13",
