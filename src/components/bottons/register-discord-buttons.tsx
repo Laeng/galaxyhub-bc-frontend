@@ -14,14 +14,14 @@ export default function RegisterDiscordButtons({lang, className = ''}: props) {
             className
         )}>
             <div>
-                <LinkButton href={lang.assets.buttons.pre_registration.url} className={classNames(
+                <LinkButton target={'_blank'} href={lang.assets.buttons.pre_registration.url} className={classNames(
                     'btn btn-blue rounded-lg'
                 )}>
                     {lang.assets.buttons.pre_registration.title}
                 </LinkButton>
             </div>
             <div>
-                <LinkButton href={lang.assets.buttons.discord.url} className={classNames(
+                <LinkButton target={'_blank'} href={lang.assets.buttons.discord.url} className={classNames(
                     'btn btn-indigo bg-discord rounded-lg'
                 )}>
                     {lang.assets.buttons.discord.title}
