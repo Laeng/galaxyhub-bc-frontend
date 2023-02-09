@@ -1,6 +1,5 @@
 import {NextRequest, NextResponse} from 'next/server'
 import AcceptLanguageParser from "accept-language-parser";
-import {trimString} from "@/utils/trim";
 
 const locales = ['en', 'ko']
 
