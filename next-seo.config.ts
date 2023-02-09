@@ -1,14 +1,14 @@
 import type { NextSeoProps } from 'next-seo';
 
 export const NEXT_SEO_DEFAULT: NextSeoProps = {
-    title: '바 시티즌 코리아',
-    description: '스타 시티즌을 좋아하는 사람들의 모임. #스타시티즌 #바시티즌',
+    title: 'Bar Citizen Korea',
+    description: '스타 시티즌을 좋아하는 사람들의 모임. #BarCitizen #starcitizen #바시티즌 #스타시티즌',
     openGraph: {
         type: 'website',
         locale: 'ko_KR',
-        url: 'https://sc.galaxyhub.kr',
+        url: 'https://barcitizen.kr',
         title: '환영합니다',
-        description: '스타 시티즌 한국어 패치를 다운로드 받을 수 있는 웹 사이트 입니다. #스타시티즌 #유저한국어 #한패 #한글',
+        description: '스타 시티즌을 좋아하는 사람들의 모임. #BarCitizen #starcitizen #바시티즌 #스타시티즌',
         /*
         images: [
             {
@@ -21,6 +21,6 @@ export const NEXT_SEO_DEFAULT: NextSeoProps = {
             },
         ],
          */
-        siteName: '스타 시티즌 유저 한국어 프로젝트',
+        siteName: 'Bar Citizen Korea',
     },
 };

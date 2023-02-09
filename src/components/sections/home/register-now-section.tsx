@@ -3,6 +3,8 @@ import RegisterDiscordButtons from "@/components/bottons/register-discord-button
 import NameTag from "@/components/brands/name-tag";
 import {langType} from "@/lang/langType";
 import hash from "@/utils/hash";
+import RegisterNowContentsDescriptionComponent
+    from "@/components/sections/home/register-now-contents-description-component";
 
 interface props {
     lang: langType
@@ -44,17 +46,7 @@ export default function RegisterNowSection({lang}: props) {
                                 </li>
                             ))}
                         </ul>
-                        <ul className={classNames(
-                            'leading-relaxed space-y-2',
-                        )}>
-                            {lang.main.register_now.contents.description.map(part => (
-                                <li key={hash(part)}>
-                                    <p>
-                                        {part}
-                                    </p>
-                                </li>
-                            ))}
-                        </ul>
+                        <RegisterNowContentsDescriptionComponent lang={lang}/>
                     </div>
 
                     <RegisterDiscordButtons lang={lang} className={classNames(

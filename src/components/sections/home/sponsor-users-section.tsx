@@ -1,6 +1,6 @@
 import CenterHeaderContentSection from "@/components/sections/center-header-content-section";
 import classNames from "classnames";
-import SponsorUsersTab, {sponsorListType} from "@/components/tabs/sponsor-users-tab";
+import SponsorUsersContentsMessageComponent, {sponsorListType} from "@/components/sections/home/sponsor-users-contents-message-component";
 import {langType} from "@/lang/langType";
 
 interface props {
@@ -21,7 +21,7 @@ export default function SponsorUsersSection({lang}: props) {
                 },
                 {
                     name: 'SSG477',
-                    comment: '쓱 TV 많관부~'
+                    comment: '이번에도 잘부탁드려요!'
                 },
             ]
         },
@@ -104,7 +104,7 @@ export default function SponsorUsersSection({lang}: props) {
                 'w-full',
                 'lg:-mt-10'
             )}>
-                <SponsorUsersTab sponsors={sponsors}/>
+                <SponsorUsersContentsMessageComponent sponsors={sponsors}/>
             </div>
         </CenterHeaderContentSection>
     );

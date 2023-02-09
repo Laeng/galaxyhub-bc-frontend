@@ -9,7 +9,8 @@ interface props {
 }
 
 export default function LinkButton({ children, href, className = '', target = '_self' }: props) {
-    if (target === '_blank') {
+
+    if (target === '_blank' || href.includes('#')) {
         return <a href={href} target={target} className={className} rel={'noreferrer noopener nofollow'}>{ children }</a>
     }
 

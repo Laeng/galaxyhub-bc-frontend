@@ -5,6 +5,7 @@ import hash from "@/utils/hash";
 import BasicAccordion from "@/components/accordions/basic-accordion";
 import LinkButton from "@/components/bottons/link-button";
 import {langType} from "@/lang/langType";
+import FaqContentsFaqComponent from "@/components/sections/home/faq-contents-faq-component";
 
 interface faqType {
     question: string,
@@ -33,15 +34,7 @@ export default function FaqSection({lang}: props) {
                                     badge={lang.main.faq.badge}
         >
             <div>
-                <div className={classNames(
-                    'divide-y divide-gray-300 dark:divide-gray-700 border-y border-gray-300 dark:border-gray-700'
-                )}>
-                    {lang.main.faq.contents.faq.map((faq, id) => (
-                        <BasicAccordion question={faq.question} key={hash(faq.question)}>
-                            {faq.answer}
-                        </BasicAccordion>
-                    ))}
-                </div>
+                <FaqContentsFaqComponent lang={lang}/>
                 <div className={classNames(
                 )}>
                     <div className={classNames(

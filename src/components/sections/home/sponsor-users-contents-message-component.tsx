@@ -18,7 +18,7 @@ interface props {
     sponsors: sponsorListType[]
 }
 
-export default function SponsorUsersTab({sponsors}: props) {
+export default function SponsorUsersContentsMessageComponent({sponsors}: props) {
     let tabs: tabType[] = [];
 
     sponsors.forEach((sponsor) => {

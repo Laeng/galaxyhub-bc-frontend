@@ -18,7 +18,7 @@ export default async function RootLayout({children, params}: props) {
 
     return (
         <html lang={params.lang}>
-        <head/>
+        <head />
         <body>
         <main className={classNames(
             'relative flex flex-col min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white antialiased'
