@@ -3,19 +3,37 @@
 import {langType} from "@/lang/langType";
 import {useState} from "react";
 import classNames from "classnames";
-import hash from "@/utils/hash";
 
 interface props {
     lang: langType
 }
+
+interface eventDataType {
+    datetime: string,
+    place: string,
+    price: string
+}
+
+interface infoType {
+    en: eventDataType,
+    ko: eventDataType
+}
+
 export default function HeroContentsInfoComponent({lang}: props){
-    let newInfo = {
-        datetime: '2023.07.01. KST 18:00',
-        place: '서울 (예정)',
-        price: '참가비 70,000원 이상'
+    let newInfo: infoType = {
+        en: {
+            datetime: '2023.07.01. KST 18:00',
+            place: 'Seoul',
+            price: '100,000 KRW'
+        },
+        ko: {
+            datetime: '2023.07.01. KST 18:00',
+            place: '서울 (예정)',
+            price: '100,000원 (잠정)'
+        }
     }
 
-    const [info, setInfo] = useState(newInfo);
+    const [info, setInfo] = useState(newInfo[lang.name]);
 
     return (
         <div className={classNames(

@@ -1,26 +1,18 @@
-function hasSubstringAt(str:string, substr:string, pos:number): boolean {
-    let idx:number = 0
-    let length: number = substr.length;
+export function trim(word:string, str:string): string {
+    let start = 0;
+    let end = str.length;
 
-    for (let max = str.length; idx < length; ++idx) {
-        if ((pos + idx) >= max || str[pos + idx] != substr[idx])
-            break;
+    while(start < end && str[start] === word) {
+        ++start;
     }
 
-    return idx === length;
-}
+    while(end > start && str[end - 1] === word) {
+        --end;
+    }
 
-export function trimString(str:string, word:string): string {
-    let start:number = 0;
-    let end:number = str.length;
-    let length:number = word.length;
+    if (start > 0 || end < str.length) {
+        return str.substring(start, end);
+    }
 
-    while (start < end && hasSubstringAt(str, word, start))
-        start += word.length;
-
-    while (end > start && hasSubstringAt(str, word, end - length))
-        end -= word.length;
-
-
-    return (start > 0 || end < str.length) ? str.substring(start, end) : str;
+    return str;
 }

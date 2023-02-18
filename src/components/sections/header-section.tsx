@@ -1,7 +1,6 @@
 'use client'
 
-import {Fragment} from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from "classnames";
 import {langType} from "@/lang/langType";
@@ -109,6 +108,18 @@ export default function HeaderSection({lang}: props) {
                                                     </LinkButton>
                                                 </li>
                                             ))}
+                                            <li className={classNames(
+                                                'py-4 flex justify-around w-full text-center border-b border-gray-700 font-medium text-gray-300',
+                                                'md:px-3 md:py-2 md:w-auto md:btn md:btn-blue md:rounded-md md:ml-auto'
+                                            )}>
+                                                <LinkButton href={lang.assets.buttons.pre_registration.url} target={'_blank'} className={classNames(
+                                                    'w-full text-center',
+                                                    'md:w-auto'
+                                                )}>
+                                                    {lang.assets.buttons.pre_registration.title}
+                                                </LinkButton>
+                                            </li>
+
                                             {/*
                                                <li className={classNames(
                                                 'w-full text-center border-b border-gray-300 dark:border-white/10 font-medium',

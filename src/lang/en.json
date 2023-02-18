@@ -1,4 +1,5 @@
 {
+  "name": "en",
   "main": {
     "hero": {
       "contents": {
@@ -110,7 +111,7 @@
       },
       "pre_registration": {
         "title": "Pre-registration",
-        "url": "#"
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLScpvvZOpMkTWvGPDXX3C62Vl8XxZvWSwx1Wd3JxCw7zMNNV5Q/viewform"
       }
     }
   }

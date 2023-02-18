@@ -1,4 +1,5 @@
 export interface langType {
+    name: 'en'|'ko',
     main: {
         hero: {
             contents: {

@@ -1,5 +1,6 @@
 import {NextRequest, NextResponse} from 'next/server'
-import AcceptLanguageParser from "accept-language-parser";
+import AcceptLanguageParser from 'accept-language-parser';
+import {trim} from './utils/trim';
 
 const locales = ['en', 'ko']
 
@@ -52,8 +53,9 @@ export function middleware(request: NextRequest) {
 
         // e.g. incoming request is /products
         // The new URL is now /en-US/products
+
         return NextResponse.redirect(
-            new URL(`/${locale}/${pathname}`, request.url)
+            new URL(`/${trim('/', locale)}/${trim('/', pathname)}`, request.url)
         );
     }
 }
