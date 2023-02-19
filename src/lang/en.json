@@ -4,9 +4,9 @@
     "hero": {
       "contents": {
         "title": [
+          "Bar Citizen",
           "Korea",
-          "Star Citizen",
-          "Event"
+          "2023"
         ],
         "description": [],
         "info": {
@@ -18,7 +18,7 @@
     },
     "story": {
       "contents": {
-        "description": "Bar Citizen was first held in 2015 as an event for Star Citizen lovers to gather and enjoy together. Bar Citizen, hosted in korea, was started in 2019 and has been held ever since. A delicious dinner and drinks are served in a comfortable space, where participants can talk about various Star Citizen news and build friendship."
+        "description": "Bar Citizen was first held in 2015 as an event for Star Citizen lovers to gather and enjoy together. Bar Citizen, hosted in korea, was started in 2019 and has been held ever since. A delicious dinner and drinks will be served in a comfortable space, where participants can talk about various Star Citizen news and build friendships."
       }
     },
     "features": {
