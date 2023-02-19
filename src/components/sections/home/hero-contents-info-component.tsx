@@ -28,8 +28,8 @@ export default function HeroContentsInfoComponent({lang}: props){
         },
         ko: {
             datetime: '2023.07.01. KST 18:00',
-            place: '서울 (TBD)',
-            price: '100,000원 (TBD)'
+            place: '서울 (예정)',
+            price: '100,000원 (잠정)'
         }
     }
 
