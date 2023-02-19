@@ -18,7 +18,7 @@
     },
     "story": {
       "contents": {
-        "description": "Bar Citizen was first held in 2015 as an event for Star Citizen lovers to gather and enjoy together. Bar Citizen, hosted in korea, was started in 2019 and has been held ever since. A delicious dinner and drinks will be served in a comfortable space, where participants can talk about various Star Citizen news and build friendships."
+        "description": "Bar Citizen was first held in 2015 as an event for Star Citizen lovers to gather and enjoy together. Bar Citizen, in Korea, was started in 2019 and has been held ever since. A delicious dinner and drinks will be served in a comfortable space, where participants can talk about various Star Citizen news and build friendships."
       }
     },
     "features": {
@@ -33,14 +33,14 @@
             "description2": "There are no plans to prepare vegetarian meals. If you are vegetarian for health or religious reasons, please prepare a separate lunch box."
           },
           {
-            "title": "Talk about game",
+            "title": "Talking about game",
             "description1": "You can talk about Star Citizen and share tips with each other.",
             "description2": "If you ever meet a rival, please let the staff know. Our staff will help you achieve your revenge through some board games."
           },
           {
-            "title": "Build friendship",
+            "title": "Building friendships",
             "description1": "Stop playing alone. Make new friends through board games.",
-            "description2": "For smooth event progress, only adults over 19 years of age can participate, and your lovely pets are not allowed to enter the venue."
+            "description2": "For smooth event progress, only adults over the age of 19 can participate, and your lovely pets are not allowed to enter the venue."
           }
         ]
       }
@@ -48,7 +48,7 @@
     "sponsor_users": {
       "badge": "Supporters",
       "title": "These are the people who supported event.",
-      "description": "This is a message of support from those who helped Bar Citizen Korea."
+      "description": "These are messages of support from those who helped Bar Citizen Korea."
     },
     "register_now": {
       "contents": {
@@ -65,7 +65,7 @@
     "faq": {
       "badge": "FAQ",
       "title": "Frequently Asked Questions.",
-      "description": "Here are answers to questions many of peoples have asked.",
+      "description": "Here are answers to questions many people have asked.",
       "contents": {
         "faq": [],
         "contacts": {
