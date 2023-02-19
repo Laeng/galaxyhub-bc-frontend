@@ -23,8 +23,8 @@ export default function HeroContentsInfoComponent({lang}: props){
     let newInfo: infoType = {
         en: {
             datetime: '2023.07.01. KST 18:00',
-            place: 'Seoul',
-            price: '100,000 KRW'
+            place: 'Seoul (TBD)',
+            price: '100,000 KRW (TBD)'
         },
         ko: {
             datetime: '2023.07.01. KST 18:00',
