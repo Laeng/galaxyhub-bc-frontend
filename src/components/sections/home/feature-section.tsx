@@ -6,7 +6,7 @@ import {ReactNode, useState} from "react";
 import hash from "@/utils/hash";
 import {ChatBubbleOvalLeftIcon, GlobeAsiaAustraliaIcon, HeartIcon} from "@heroicons/react/24/outline";
 import CenterHeaderContentSection from "@/components/sections/center-header-content-section";
-import {featureContentsType, langType} from "@/lang/langType";
+import {featureContentsType, langType} from "@/lang/lang-type";
 
 interface featureType {
     icon: ReactNode,

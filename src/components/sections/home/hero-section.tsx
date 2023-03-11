@@ -1,15 +1,17 @@
 import classNames from "classnames";
-import RegisterDiscordButtons from "@/components/bottons/register-discord-buttons";
-import {langType} from "@/lang/langType";
+import {langType} from "@/lang/lang-type";
 import hash from "@/utils/hash";
-import HeroContentsDescriptionComponent from "@/components/sections/home/hero-contents-description-component";
-import HeroContentsInfoComponent from "@/components/sections/home/hero-contents-info-component";
+import HorizontalButtons from "@/components/bottons/horizontal-buttons";
+import {infoType} from "@/types/api-contents-home-type";
 
 interface props {
-    lang: langType
+    lang: langType,
+    data: {
+        info: infoType
+    }
 }
 
-export default function HeroSection({lang}: props) {
+export default function HeroSection({lang, data}: props) {
     return (
         <section className={classNames(
             'container'
@@ -44,11 +46,48 @@ export default function HeroSection({lang}: props) {
                         'space-y-4',
                         'lg:space-y-6'
                     )}>
-                        <HeroContentsInfoComponent lang={lang}/>
-                        <HeroContentsDescriptionComponent lang={lang}/>
+                        <div className={classNames(
+                            '',
+                            'lg:border-l-4 lg:border-black lg:dark:border-white'
+                        )}>
+                            <ul className={classNames(
+                                'font-bold',
+                                'lg:px-8 lg:space-y-2'
+                            )}>
+                                <li className={classNames(
+                                    'text-2xl',
+                                    'lg:text-5xl'
+                                )}>
+                                    {data.info.datetime}
+                                </li>
+                                <li className={classNames(
+                                    'text-xl',
+                                    'lg:text-3xl'
+                                )}>
+                                    {data.info.place}
+                                </li>
+                                <li className={classNames(
+                                    'text-xl',
+                                    'lg:text-3xl'
+                                )}>
+                                    {data.info.price}
+                                </li>
+                            </ul>
+                        </div>
+                        <ul className={classNames(
+                            'space-y-2 text-sm'
+                        )}>
+                            {data.info.inform.map(part => (
+                                <li key={hash(part)} className={classNames(
+                                    ''
+                                )}>
+                                    {part}
+                                </li>
+                            ))}
+                        </ul>
                     </div>
 
-                    <RegisterDiscordButtons lang={lang} className={classNames(
+                    <HorizontalButtons buttons={data.info.button} className={classNames(
                         'mt-auto pt-6'
                     )}/>
                 </div>

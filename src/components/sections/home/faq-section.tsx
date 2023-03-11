@@ -1,11 +1,9 @@
 import CenterHeaderContentSection from "@/components/sections/center-header-content-section";
-import {ReactNode, useState} from "react";
 import classNames from "classnames";
 import hash from "@/utils/hash";
 import BasicAccordion from "@/components/accordions/basic-accordion";
 import LinkButton from "@/components/bottons/link-button";
-import {langType} from "@/lang/langType";
-import FaqContentsFaqComponent from "@/components/sections/home/faq-contents-faq-component";
+import {langType} from "@/lang/lang-type";
 
 interface faqType {
     question: string,
@@ -13,28 +11,28 @@ interface faqType {
 }
 
 interface props {
-    lang: langType
+    lang: langType,
+    data: {
+        faq: faqType[]
+    }
 }
 
-export default function FaqSection({lang}: props) {
-    lang.main.faq.contents.faq.push(
-        {
-            question: '여러분의 후원을 기다립니다.',
-            answer: '더 풍성한 바 시티즌을 위해 후원을 모금하고 있어요. 후원에 관심이 있으시다면 디스코드로 문의해 주세요.',
-        },
-        {
-            question: '모든 문의는 디스코드를 통해 받고 있어요!',
-            answer: '바 시티즌 코리아의 디스코드로 문의해 주세요.',
-        },
-    )
-
+export default function FaqSection({lang, data}: props) {
     return (
         <CenterHeaderContentSection title={lang.main.faq.title}
                                     description={lang.main.faq.description}
                                     badge={lang.main.faq.badge}
         >
             <div>
-                <FaqContentsFaqComponent lang={lang}/>
+                <div className={classNames(
+                    'divide-y divide-gray-300 dark:divide-gray-700 border-y border-gray-300 dark:border-gray-700'
+                )}>
+                    {data.faq.map((faq) => (
+                        <BasicAccordion question={faq.question} key={hash(faq.question)}>
+                            {faq.answer}
+                        </BasicAccordion>
+                    ))}
+                </div>
                 <div className={classNames(
                 )}>
                     <div className={classNames(

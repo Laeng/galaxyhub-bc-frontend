@@ -1,15 +1,18 @@
 import classNames from "classnames";
-import RegisterDiscordButtons from "@/components/bottons/register-discord-buttons";
 import NameTag from "@/components/brands/name-tag";
-import {langType} from "@/lang/langType";
+import {langType} from "@/lang/lang-type";
 import hash from "@/utils/hash";
-import RegisterNowContentsDescriptionComponent from "@/components/sections/home/register-now-contents-description-component";
+import {infoType} from "@/types/api-contents-home-type";
+import HorizontalButtons from "@/components/bottons/horizontal-buttons";
 
 interface props {
-    lang: langType
+    lang: langType,
+    data: {
+        info: infoType
+    }
 }
 
-export default function RegisterNowSection({lang}: props) {
+export default function RegisterNowSection({lang, data}: props) {
 
     return (
         <section className={classNames(
@@ -40,10 +43,20 @@ export default function RegisterNowSection({lang}: props) {
                                 </li>
                             ))}
                         </ul>
-                        <RegisterNowContentsDescriptionComponent lang={lang}/>
+                        <ul className={classNames(
+                            'leading-relaxed space-y-2',
+                        )}>
+                            {data.info.inform.map(part => (
+                                <li key={hash(part)}>
+                                    <p>
+                                        {part}
+                                    </p>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
 
-                    <RegisterDiscordButtons lang={lang} className={classNames(
+                    <HorizontalButtons buttons={data.info.button} className={classNames(
                         'mt-auto pt-6'
                     )}/>
                 </div>
