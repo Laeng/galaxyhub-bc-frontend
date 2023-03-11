@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import Image from "next/image";
-import {langType} from "@/lang/langType";
+import {langType} from "@/lang/lang-type";
 import hash from "@/utils/hash";
 
 interface props {

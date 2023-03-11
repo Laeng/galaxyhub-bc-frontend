@@ -4,7 +4,7 @@ import localFont from 'next/font/local';
 import HeaderSection from "@/components/sections/header-section";
 import classNames from "classnames";
 import FooterSection from "@/components/sections/footer-section";
-import {langType} from "@/lang/langType";
+import {langType} from "@/lang/lang-type";
 import Lang from "@/lang";
 
 interface props {

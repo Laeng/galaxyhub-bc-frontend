@@ -3,7 +3,7 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from "classnames";
-import {langType} from "@/lang/langType";
+import {langType} from "@/lang/lang-type";
 import hash from "@/utils/hash";
 import LinkButton from "@/components/bottons/link-button";
 
@@ -68,7 +68,7 @@ export default function HeaderSection({lang}: props) {
                                     }
                                 )}>
                                     <div className={classNames(
-                                        'rounded-t-2xl border-t border-gray-300 dark:border-gray-700 bg-gray-800',
+                                        'rounded-t-2xl bg-gray-800',
                                         'md:p-0 md:items-end md:rounded-none md:border-0 md:bg-transparent'
                                     )}>
                                         <div className={classNames(
