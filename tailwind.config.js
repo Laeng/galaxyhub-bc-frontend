@@ -10,7 +10,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Pretendard', ...defaultTheme.fontFamily.sans],
-                together: ['TTTogether']
+                together: ['var(--font-together)']
             },
             colors: {
                 '222222': '#222222',
