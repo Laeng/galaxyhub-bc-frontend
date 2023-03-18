@@ -108,6 +108,7 @@ export default function HeaderSection({lang}: props) {
                                                     </LinkButton>
                                                 </li>
                                             ))}
+                                            {/*
                                             <li className={classNames(
                                                 'py-4 flex justify-around w-full text-center border-b border-gray-700 font-medium text-gray-300',
                                                 'md:px-3 md:py-2 md:w-auto md:btn md:btn-blue md:rounded-md md:ml-auto'
@@ -119,6 +120,8 @@ export default function HeaderSection({lang}: props) {
                                                     {lang.assets.buttons.pre_registration.title}
                                                 </LinkButton>
                                             </li>
+
+                                            */}
 
                                             {/*
                                                <li className={classNames(
