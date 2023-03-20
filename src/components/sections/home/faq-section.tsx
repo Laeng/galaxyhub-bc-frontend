@@ -4,6 +4,8 @@ import hash from "@/utils/hash";
 import BasicAccordion from "@/components/accordions/basic-accordion";
 import LinkButton from "@/components/bottons/link-button";
 import {langType} from "@/lang/lang-type";
+import {infoType} from "@/types/api-contents-home-type";
+import {info} from "autoprefixer";
 
 interface faqType {
     question: string,
@@ -13,11 +15,14 @@ interface faqType {
 interface props {
     lang: langType,
     data: {
+        info: infoType
         faq: faqType[]
     }
 }
 
 export default function FaqSection({lang, data}: props) {
+    let discord = data.info.button.find((button) => button.url.includes('discord'));
+
     return (
         <CenterHeaderContentSection title={lang.main.faq.title}
                                     description={lang.main.faq.description}
@@ -46,12 +51,14 @@ export default function FaqSection({lang, data}: props) {
                             {lang.main.faq.contents.contacts.description}
                         </p>
                         <div className={classNames(
-                            'mt-4 mb-2'
+                            'mt-4 mb-2', {
+                                'hidden': discord === undefined
+                            }
                         )}>
-                            <LinkButton href={lang.assets.buttons.discord.url} className={classNames(
+                            <LinkButton href={discord?.url ?? ''} className={classNames(
                                 'btn btn-indigo bg-discord rounded-lg'
                             )}>
-                                {lang.assets.buttons.discord.title}
+                                {discord?.name ?? ''}
                             </LinkButton>
                         </div>
                     </div>
