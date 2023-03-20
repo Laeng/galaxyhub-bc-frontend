@@ -6,7 +6,7 @@ interface props {
     lang: langType
 }
 
-export function SponsorFleetsSection({lang}: props) {
+export default function SponsorFleetsSection({lang}: props) {
     return (
         <section className={classNames(
             'container py-16'

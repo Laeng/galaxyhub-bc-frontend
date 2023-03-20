@@ -20,6 +20,9 @@ export default function HorizontalButtons({className = '', buttons}: props) {
             'flex space-x-2 mb-2',
             className
         )}>
+            {/*
+              <button class="btn-blue btn-white"/>
+            */}
             {buttons.map(button => (
                 <div key={hash(button.name)}>
                     <LinkButton target={button.target} href={button.url} className={classNames(

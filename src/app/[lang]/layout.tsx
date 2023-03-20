@@ -26,11 +26,11 @@ export const metadata = {
       statusBarStyle: "black-translucent"
     },
     title: "Bar Citizen Korea",
-    description: "스타 시티즌을 좋아하는 사람들의 모임. #BarCitizen #starcitizen #바시티즌 #스타시티즌",
+    description: "스타 시티즌을 좋아하는 사람들의 모임. - 바 시티즌 코리아 #BarCitizen #starcitizen #바시티즌 #스타시티즌",
     openGraph: {
         siteName: 'Bar Citizen Korea',
         title: '환영합니다.',
-        description: '스타 시티즌을 좋아하는 사람들의 모임. #BarCitizen #starcitizen #바시티즌 #스타시티즌',
+        description: '스타 시티즌을 좋아하는 사람들의 모임. - 바 시티즌 코리아 #BarCitizen #starcitizen #바시티즌 #스타시티즌',
         url: 'https://barcitizen.kr',
         type: 'website',
         locale: 'ko_KR',
