@@ -49,6 +49,11 @@ export interface langType {
         },
         sponsor_fleets: {
             description: string
+        },
+        location: {
+            badge: string,
+            title: string,
+            description: string
         }
     },
     footer: {
@@ -60,9 +65,7 @@ export interface langType {
         title: string,
         menu: linkType[],
         buttons: {
-            bar_citizen_korea: linkType,
-            discord: linkType,
-            pre_registration: linkType
+            bar_citizen_korea: linkType
         }
     }
 }
