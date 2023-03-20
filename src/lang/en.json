@@ -18,7 +18,7 @@
     },
     "story": {
       "contents": {
-        "description": "Bar Citizen was first held in 2015 as an event for Star Citizen lovers to gather and enjoy together. Bar Citizen, in Korea, was started in 2019 and has been held ever since. A delicious dinner and drinks will be served in a comfortable space, where participants can talk about various Star Citizen news and build friendships."
+        "description": "Bar Citizen was first held in 2015 as an event for Star Citizen lovers to gather and enjoy together. Bar Citizen, in Korea, was started in 2019 and has been held ever since. A delicious foods and drinks will be served in a comfortable space, where participants can talk about various Star Citizen news and build friendships."
       }
     },
     "features": {
@@ -29,8 +29,8 @@
         "description": [
           {
             "title": "Suppertime",
-            "description1": "Meat devotee and event host Shatagon's curated dinner will give you a good start.",
-            "description2": "There are no plans to prepare vegetarian meals. If you are vegetarian for health or religious reasons, please prepare a separate lunch box."
+            "description1": "You can order your own food from the provided menu.",
+            "description2": "A variety of food and drinks are waiting for you. Please note that food allergens are not marked and vegetarian options are not provided."
           },
           {
             "title": "Talking about game",
@@ -75,6 +75,11 @@
     },
     "sponsor_fleets": {
       "description": "The Korean Star Citizen organizations helped this event."
+    },
+    "location": {
+      "badge": "Location",
+      "title": "Let's meet in Incheon.",
+      "description": "Only those who have registration can enter."
     }
   },
   "footer": {
