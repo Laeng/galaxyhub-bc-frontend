@@ -53,7 +53,10 @@ export interface langType {
         location: {
             badge: string,
             title: string,
-            description: string
+            description: string,
+            "contents": {
+                "loading": string
+            }
         }
     },
     footer: {

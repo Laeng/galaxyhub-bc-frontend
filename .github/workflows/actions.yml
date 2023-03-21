@@ -21,7 +21,7 @@ jobs:
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1.3
         with:
-          envkey_PUBLIC_KAKAO_KEY: ${{ secrets.ENV_KAKAO_MAP }}
+          envkey_NEXT_PUBLIC_KAKAO_KEY: ${{ secrets.ENV_KAKAO_MAP }}
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:

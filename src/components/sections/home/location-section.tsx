@@ -26,16 +26,17 @@ export default function LocationSection({lang, data}: props) {
                 'lg:grid-cols-2'
             )}>
                 <LocationMap lang={lang} data={data} className={classNames(
-                    'h-96 w-full rounded-lg border border-gray-300 dark:bg-gray-700'
+                    'h-96 w-full rounded-lg border border-gray-300 dark:border-gray-700',
+                    'lg:h-full'
                 )}/>
                 <div className={classNames(
-                    'grid'
+                    'grid gap-4'
                 )}>
                     <Image src={data.location.images[0]} alt={''} width={1500} height={707} className={classNames(
-                        'rounded-lg border border-gray-300 dark:bg-gray-700'
+                        'rounded-lg'
                     )}/>
                     <div className={classNames(
-                        'h-full flex flex-col'
+                        'h-full flex flex-col rounded-lg border border-gray-300 dark:border-gray-700 p-4'
                     )}>
                         <h4 className={classNames(
                             'font-bold text-2xl'
@@ -43,7 +44,7 @@ export default function LocationSection({lang, data}: props) {
                             {data.location.name}
                         </h4>
                         <div className={classNames(
-                            'my-2'
+                            'mt-2'
                         )}>
                             <p className={classNames(
                                 'font-medium'
@@ -52,15 +53,13 @@ export default function LocationSection({lang, data}: props) {
                             </p>
 
                             <p className={classNames(
-                                'font-medium', {
-                                    "hidden": lang.name === 'ko'
-                                }
+                                'font-medium'
                             )}>
                                 {data.location.address_ko}
                             </p>
                         </div>
                         <div className={classNames(
-                            'mt-auto'
+                            'mt-auto pt-4'
                         )}>
                             <HorizontalButtons buttons={data.location.button}/>
                         </div>

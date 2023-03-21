@@ -5,6 +5,7 @@ import {infoType, locationType} from "@/types/api-contents-home-type";
 import classNames from "classnames";
 import {useEffect, useRef} from "react";
 import {} from "react-kakao-maps-sdk";
+import * as process from "process";
 
 interface props {
     lang: langType,
@@ -59,7 +60,7 @@ export default function LocationMap({lang, data, className}: props) {
             <p className={classNames(
                 'font-medium text-gray-500'
             )}>
-                지도를 불러오는 중...
+                {lang.main.location.contents.loading}
             </p>
         </div>
     );
