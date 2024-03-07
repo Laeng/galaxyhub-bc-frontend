@@ -44,7 +44,6 @@ export default async function Home({params}: props) {
 
     return (
         <>
-
             <HeroSection lang={lang} data={{info: data.data.info}}/>
             <StorySection lang={lang}/>
             <div id={'introduce'} className={classNames(
