@@ -42,7 +42,7 @@ export default function FeatureSection({lang}: props) {
                 'rounded-2xl pb-4',
                 'lg:pb-16'
             )}>
-                <Image src={'/images/bar-citizen-korea-2022.jpg'}
+                <Image src={'/images/bar-citizen-korea-2023.jpeg'}
                        alt={'bar citizen 2022 photo'}
                        width={'2048'} height={'1371'}
                        className={classNames(

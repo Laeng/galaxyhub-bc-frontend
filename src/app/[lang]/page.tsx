@@ -52,9 +52,13 @@ export default async function Home({params}: props) {
             )}>
                 <FeatureSection lang={lang}/>
             </div>
+
+            {/*
             <div id={'location'}>
                 <LocationSection lang={lang} data={{location: data.data.location}}/>
             </div>
+
+            */}
             <div id={'supporters'}>
                 <SponsorUsersSection lang={lang} data={{sponsor: data.data.sponsor}}/>
             </div>
