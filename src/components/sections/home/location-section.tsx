@@ -22,8 +22,6 @@ export default function LocationSection({lang, data}: props) {
                                     badge={lang.main.location.badge}>
 
             <div className={classNames(
-                'grid gap-4',
-                'lg:grid-cols-2'
             )}>
                 <LocationMap lang={lang} data={data} className={classNames(
                     'h-96 w-full rounded-lg border border-gray-300 dark:border-gray-700',
@@ -32,9 +30,6 @@ export default function LocationSection({lang, data}: props) {
                 <div className={classNames(
                     'grid gap-4'
                 )}>
-                    <Image src={data.location.images[0]} alt={''} width={1500} height={707} className={classNames(
-                        'rounded-lg'
-                    )}/>
                     <div className={classNames(
                         'h-full flex flex-col rounded-lg border border-gray-300 dark:border-gray-700 p-4'
                     )}>
