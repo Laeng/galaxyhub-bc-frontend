@@ -24,8 +24,7 @@ export default function LocationSection({lang, data}: props) {
             <div className={classNames(
             )}>
                 <LocationMap lang={lang} data={data} className={classNames(
-                    'h-96 w-full rounded-lg border border-gray-300 dark:border-gray-700',
-                    'lg:h-full'
+                    'h-96 w-full rounded-lg border border-gray-300 dark:border-gray-700'
                 )}/>
                 <div className={classNames(
                     'grid gap-4'
