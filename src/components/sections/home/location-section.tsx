@@ -21,7 +21,7 @@ export default function LocationSection({lang, data}: props) {
                                     description={lang.main.location.description}
                                     badge={lang.main.location.badge}>
 
-            <div className={classNames(
+            <div className={classNames('space-y-4'
             )}>
                 <LocationMap lang={lang} data={data} className={classNames(
                     'h-96 w-full rounded-lg border border-gray-300 dark:border-gray-700'
