@@ -56,9 +56,6 @@ export default async function Home({params}: props) {
                 <LocationSection lang={lang} data={{location: data.data.location}}/>
             </div>
 
-            <div id={'supporters'}>
-                <SponsorUsersSection lang={lang} data={{sponsor: data.data.sponsor}}/>
-            </div>
             <div>
                 <RegisterNowSection lang={lang} data={{info: data.data.info}}/>
             </div>

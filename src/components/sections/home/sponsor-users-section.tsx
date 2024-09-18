@@ -1,3 +1,5 @@
+'use client'
+
 import CenterHeaderContentSection from "@/components/sections/center-header-content-section";
 import classNames from "classnames";
 import {langType} from "@/lang/lang-type";

@@ -34,15 +34,13 @@ export const metadata = {
         url: 'https://barcitizen.kr',
         type: 'website',
         locale: 'ko_KR',
-        /**
         images: [
             {
-                url: 'https://nextjs.org/og.png',
-                width: 800,
-                height: 600,
+                url: 'https://barcitizen.kr/images/bar-citizen-korea-2023.jpeg',
+                width: 1280,
+                height: 960,
             },
         ],
-         **/
     }
 };
 
