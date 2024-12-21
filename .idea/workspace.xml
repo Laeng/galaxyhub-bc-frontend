@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f937fbe-889e-4c5b-afba-2e822f3a8ffe" name="변경" comment="feat: 버전 업그레이드 및 내용 갱신">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/actions.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/galaxyhub-bc-frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/galaxyhub-bc-frontend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/tt-together/tt-together.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/tt-together/woff/tt-together.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/tt-together/woff2/tt-together.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/bab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/bar-citizen-korea-2022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/bar-citizen-korea-2023.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brands/fal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brands/msf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brands/sha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/gwanghwamun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo-black.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/next.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/thirteen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vercel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/fonts/tt-together.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/accordions/basic-accordion.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bottons/horizontal-buttons.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bottons/link-button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/brands/name-tag.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/map/location-map.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/center-header-content-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/footer-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/header-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/home/faq-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/home/feature-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/home/hero-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/home/location-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/home/register-now-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/home/sponsor-fleets-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/home/sponsor-users-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sections/home/story-section.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tabs/pills-tab.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useIntersection.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useInterval.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang/ko.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang/lang-type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/api-contents-home-type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/api-type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/hash.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/trim.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Laeng&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Laeng/galaxyhub-bc-frontend.git&quot;,
+    &quot;accountId&quot;: &quot;e7e3d08e-ffc7-48b0-af54-4777afb75224&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2qTy04xS93c2sw9E9knNL5Lm9Cn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.AccountsToCodyMigration": "true",
+    "RunOnceActivity.ChatTagsLlmMigration": "true",
+    "RunOnceActivity.CodyAccountHistoryMigration": "true",
+    "RunOnceActivity.CodyAccountsIdsRefresh": "true",
+    "RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount": "true",
+    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
+    "RunOnceActivity.CodyHistoryLlmMigration": "true",
+    "RunOnceActivity.CodyMigrateChatHistory-v2": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.DeprecatedChatLlmMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.ToggleCodyToolWindowAfterMigration": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "refactor/prepare-2025",
+    "last_opened_file_path": "/Users/laeng/Documents/Develop/barcitizen/repo/next/galaxyhub-bc-frontend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/laeng/Documents/Develop/barcitizen/repo/next/galaxyhub-bc-frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f937fbe-889e-4c5b-afba-2e822f3a8ffe" name="변경" comment="" />
+      <created>1730330498119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730330498119</updated>
+      <workItem from="1730330499130" duration="160000" />
+      <workItem from="1734700634700" duration="2128000" />
+      <workItem from="1734744141823" duration="17921000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 버전 업그레이드 및 내용 갱신" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 버전 업그레이드 및 내용 갱신" />
+  </component>
+</project>
