@@ -403,7 +403,7 @@ const GameMeetup = () => {
                       </p>
                     </h2>
                     <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                      아직 참가 신청을 받지않고 있습니다. DISCORD에서 참가 신청 일자를 전달드리겠습니다.
+                      현재 참가 신청을 받지 않고 있습니다. 디스코드를 통해 참가 신청 일자를 전달드리겠습니다.
                     </p>
                     <div className="flex gap-6 w-full lg:w-auto justify-start">
                       {/*
