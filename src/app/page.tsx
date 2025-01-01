@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Calendar, MapPin, Users, CreditCard } from 'lucide-react';
+import Map from "@/components/map/Map";
 
 type Star = {
   top: number;
@@ -131,7 +132,7 @@ const GameMeetup = () => {
 
 
   const DISCORD_LINK = 'https://discord.gg/gqpd3p6';
-  //const REGISTER_LINK = 'https://forms.gle/';
+  const REGISTER_LINK = 'https://forms.gle/qA3wPBymFJ6YkeAT9';
 
   const faqs = [
     {
@@ -149,6 +150,10 @@ const GameMeetup = () => {
     {
       question: "현장 취소가 가능한가요?",
       answer: "현장 취소는 불가능합니다. 참가가 어려우신 경우 디스코드를 통해 연락주시기 바랍니다. 환불은 기간에 따라 불가할 수 있습니다."
+    },
+    {
+      question: "저녁 식사도 제공하나요?",
+      answer: "자유로운 소통과 참석을 위하여 저녁 식사는 제공하지 않습니다. 간단한 "
     }
   ];
 
@@ -282,10 +287,10 @@ const GameMeetup = () => {
             <div className={`w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 transition-all duration-1000 transform
   ${visibleSections.has('about') ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}`}>
               {[
-                {icon: Calendar, title: '일시', content: ['곧 공개하겠습니다.', '곧 공개하겠습니다.']},
-                {icon: MapPin, title: '장소', content: ['곧 공개하겠습니다.', '곧 공개하겠습니다.']},
-                {icon: Users, title: '참가인원', content: ['곧 공개하겠습니다.', '곧 공개하겠습니다.']},
-                {icon: CreditCard, title: '참가비', content: ['곧 공개하겠습니다.', '곧 공개하겠습니다.']}
+                {icon: Calendar, title: '일시', content: ['2025년 5월 3일', '19시 ~ 02시']},
+                {icon: MapPin, title: '장소', content: ['카페 노웨어', '서울 송파구 가락로 84, 지하 1층']},
+                {icon: Users, title: '참가인원', content: ['50명', '선착순 모집']},
+                {icon: CreditCard, title: '참가비', content: ['70,000원', '명찰, 간식 제공']}
               ].map((item, index) => (
                   <div
                       key={index}
@@ -296,7 +301,7 @@ const GameMeetup = () => {
                   >
                     <item.icon className="w-8 h-8 text-purple-400 mb-4"/>
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                    <div className="redacted">
+                    <div className="">
                       {item.content.map((line, i) => (
                           <p key={i} className="text-gray-400">{line}</p>
                       ))}
@@ -318,7 +323,14 @@ const GameMeetup = () => {
                 <div className="w-full lg:w-5/12">
                   <div className="lg:sticky lg:top-32">
                     <div className="bg-purple-900 bg-opacity-30 backdrop-blur-lg rounded-3xl p-8">
-                      <h3 className="text-2xl font-bold mb-6">프로그램</h3>
+                      <h3 className="text-2xl font-bold">위치</h3>
+                      <ul className={"mb-6 text-gray-400"}>
+                        <li className="flex items-start"
+                            style={{transitionDelay: `${100}ms`}}>
+                          카페 노웨어, 서울 송파구 가락로 84, 지하 1층
+                        </li>
+                      </ul>
+                      {/*
                       <ul className="space-y-4 text-gray-400 redacted">
                         {programs.map((item, index) => (
                             <li
@@ -331,6 +343,10 @@ const GameMeetup = () => {
                             </li>
                         ))}
                       </ul>
+                      */}
+                      <div className={'rounded-xl overflow-hidden h-72'}>
+                        <Map/>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -341,8 +357,8 @@ const GameMeetup = () => {
                     <h3 className="text-2xl font-bold mb-6">행사소개</h3>
                     <div className="space-y-6 text-gray-400">
                       <p className="leading-relaxed">
-                        <b>좋은 음식</b> 합석한 사람과 함께 음식을 고르고 나눠먹는다면 좋은 시작이 될거에요.
-                        다양한 음식과 음료 그리고 술이 여러분을 기다리고 있으며 직접 주문할 수 있어요. 식품 알레르기 유발 물질 안내와 채식을 제공하지 않으므로 주의해주세요.
+                        <b>간식 시간</b> 합석한 사람과 함께 음식을 고르고 나눠먹는다면 좋은 시작이 될거에요.
+                        간식과 함께 새로운 만남을 시작할 수도 있을 거에요. 식품 알레르기 유발 물질 안내와 채식을 제공하지 않으므로 주의해주세요.
                       </p>
                       <p className="leading-relaxed">
                         <b>정보 교류</b> 스타 시티즌의 새로운 소식에 대해 이야기를 나누고 꿀팁을 서로 공유할 수 있어요.
@@ -379,7 +395,7 @@ const GameMeetup = () => {
             <div className={`w-full max-w-6xl mx-auto transition-all duration-1000 transform
             ${visibleSections.has('register') ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}`}>
               <div
-                  className="relative bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 rounded-3xl p-16 overflow-hidden">
+                  className="relative bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 rounded-3xl p-8 lg:p-16 overflow-hidden">
                 {/* Animated Background Elements */}
                 <div className="absolute inset-0">
                   <div
@@ -395,35 +411,32 @@ const GameMeetup = () => {
                       <p className="text-4xl md:text-5xl block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
                         참가 신청
                       </p>
-                      <p className="text-3xl font-mono typing-effect hidden lg:block" style={{width: '31ch'}}>
-                        &#47;&#47;REGISTRATION.NOT_AVAILABLE...
-                      </p>
-                      <p className="text-2xl font-mono typing-effect lg:hidden" style={{width: '18ch'}}>
-                        &#47;&#47;NOT_AVAILABLE...
+                      <p className="text-2xl lg:text-3xl font-mono lg:block" style={{width: '18ch'}}>
+                        얼리버드 참가신청
                       </p>
                     </h2>
                     <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                      현재 참가 신청을 받지 않고 있습니다. 디스코드를 통해 참가 신청 일자를 전달드리겠습니다.
+                      얼리버드 참가신청을 <span className={'redacted'}>xxxx년 xx월 xx일</span> 부터 <span className={'redacted'}>xxxx년 xx월 xx일</span> 까지
+                      진행합니다. 바 시티즌 코리아 디스코드를 통해 최신 정보를 확인하세요.
                     </p>
-                    <div className="flex gap-6 w-full lg:w-auto justify-start">
-                      {/*
+                    <div className="flex flex-col gap-6 w-full lg:flex-row lg:w-auto justify-start">
                       <a
                           href={REGISTER_LINK}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-8 py-4 bg-white text-purple-900 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors"
+                          className="inline-flex items-center gap-2 px-8 py-4 bg-white text-purple-900 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors justify-center"
                       >
                         지금 등록하기
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
                         </svg>
                       </a>
-                      */}
+
                       <a
                           href={DISCORD_LINK}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-8 py-4 bg-white text-purple-900 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors"
+                          className="inline-flex items-center gap-2 px-8 py-4 bg-white text-purple-900 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors justify-center"
                       >
                         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                           <path

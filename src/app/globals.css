@@ -48,7 +48,7 @@
   }
 
   .redacted:hover::after {
-    content: "곧 공개하겠습니다.";
+    content: "공개예정";
   }
 
   .typing-effect {
