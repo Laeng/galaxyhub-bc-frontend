@@ -157,6 +157,7 @@ const GameMeetup = () => {
     }
   ];
 
+  /*
   const programs = [
     {time: '00:00', content: '-'},
     {time: '00:00', content: '-'},
@@ -164,6 +165,7 @@ const GameMeetup = () => {
     {time: '00:00', content: '-'},
     {time: '00:00', content: '-'}
   ]
+*/
 
   return (
       <div className="min-h-screen bg-black text-white break-keep">
