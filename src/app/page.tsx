@@ -291,7 +291,7 @@ const GameMeetup = () => {
               {[
                 {icon: Calendar, title: '일시', content: ['2025년 5월 3일', '19시 ~ 02시']},
                 {icon: MapPin, title: '장소', content: ['카페 노웨어', '서울 송파구 가락로 84, 지하 1층']},
-                {icon: Users, title: '참가인원', content: ['50명', '선착순 모집']},
+                {icon: Users, title: '참가인원', content: ['80명', '선착순 모집']},
                 {icon: CreditCard, title: '참가비', content: ['70,000원', '명찰, 간식 제공']}
               ].map((item, index) => (
                   <div
