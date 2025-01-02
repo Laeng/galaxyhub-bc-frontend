@@ -419,7 +419,7 @@ const GameMeetup = () => {
                     </h2>
                     <p className="text-lg text-gray-300 mb-8 leading-relaxed">
                       얼리버드 참가신청을 <span className={''}>2025년 1월 2일</span>부터 2025년 1월 31일</span>까지
-                      진행합니다. 선착순 신청이며 참가비 납부를 완료하여야만 접수가 완료됩니다. 바 시티즌 코리아 디스코드를 통해 최신 정보를 확인하세요.
+                      진행합니다. 선착순 신청이며 참가비 납부를 완료하여야만 접수가 완료됩니다. 얼리버드 참가신청은 조기 마감될 수 있습니다. 바 시티즌 코리아 디스코드를 통해 최신 정보를 확인하세요.
                     </p>
                     <div className="flex flex-col gap-6 w-full lg:flex-row lg:w-auto justify-start">
                       <a
