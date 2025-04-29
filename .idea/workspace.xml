@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f937fbe-889e-4c5b-afba-2e822f3a8ffe" name="변경" comment="feat: 버전 업그레이드 및 내용 갱신">
+    <list default="true" id="6f937fbe-889e-4c5b-afba-2e822f3a8ffe" name="변경" comment="feat: 컨텐츠 업데이트">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +35,9 @@
     &quot;accountId&quot;: &quot;e7e3d08e-ffc7-48b0-af54-4777afb75224&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -93,7 +95,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -108,7 +110,10 @@
       <workItem from="1730330499130" duration="160000" />
       <workItem from="1734700634700" duration="2128000" />
       <workItem from="1734744141823" duration="18750000" />
-      <workItem from="1735729602341" duration="5330000" />
+      <workItem from="1735729602341" duration="5878000" />
+      <workItem from="1735950957725" duration="972000" />
+      <workItem from="1735952134364" duration="622000" />
+      <workItem from="1745936935546" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 버전 업그레이드 및 내용 갱신">
       <option name="closed" value="true" />
@@ -134,7 +139,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734774616752</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: 컨텐츠 업데이트">
+      <option name="closed" value="true" />
+      <created>1735738494867</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735738494867</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: 컨텐츠 업데이트">
+      <option name="closed" value="true" />
+      <created>1735738528116</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735738528116</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +163,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 버전 업그레이드 및 내용 갱신" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 버전 업그레이드 및 내용 갱신" />
+    <MESSAGE value="feat: 컨텐츠 업데이트" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 컨텐츠 업데이트" />
   </component>
 </project>

@@ -132,9 +132,16 @@ const GameMeetup = () => {
 
 
   const DISCORD_LINK = 'https://discord.gg/gqpd3p6';
-  const REGISTER_LINK = 'https://forms.gle/qA3wPBymFJ6YkeAT9';
 
   const faqs = [
+    {
+      question: "참가 신청을 안했는데 참석 할 수 있나요?",
+      answer: "죄송합니다. 공간 문제로 인하여 참가 신청을 하지 않은 분은 참석할 수 없습니다."
+    },
+    {
+      question: "참가 신청을 추가로 받나요?",
+      answer: "현재 참가자가 확정되어 추가 신청을 받지 않습니다."
+    },
     {
       question: "참가 연령제한이 있나요?",
       answer: "만 19세 이상이면 누구나 참여 가능합니다."
@@ -246,24 +253,9 @@ const GameMeetup = () => {
                 2025년 5월 3일, Star Citizen 파일럿들의 특별한 오프라인 모임이 펼쳐집니다.
                 게임에 관한 이야기들을 함께 나누며 우주의 경험을 공유하세요.
               </p>
-              <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 mb-12">
-                <button
-                    onClick={() => scrollToSection('register')}
-                    className="px-12 py-5 bg-purple-600 rounded-full hover:bg-purple-700 transition-colors text-lg w-full md:w-auto"
-                >
-                  참가 신청하기
-                </button>
-                <button
-                    className="px-12 py-5 bg-indigo-600 rounded-full hover:bg-indigo-700 transition-colors text-lg flex items-center justify-center space-x-2 w-full md:w-auto"
-                    onClick={() => window.open(DISCORD_LINK, '_blank')}
-                >
-                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
-                  </svg>
-                  <span>Discord 참가하기</span>
-                </button>
-              </div>
+              <p className="text-3xl leading-relaxed mb-12 max-w-2xl mx-auto font-bold">
+                참가 신청이 마감되었습니다.
+              </p>
             </div>
             {/* Scroll Indicator */}
             <div
@@ -330,6 +322,10 @@ const GameMeetup = () => {
                         <li className="flex items-start"
                             style={{transitionDelay: `${100}ms`}}>
                           카페 노웨어, 서울 송파구 가락로 84, 지하 1층
+                        </li>
+                        <li className="flex items-start"
+                            style={{transitionDelay: `${100}ms`}}>
+                          (참가 신청자만 방문 가능)
                         </li>
                       </ul>
                       {/*
@@ -411,29 +407,13 @@ const GameMeetup = () => {
                   <div className="w-full">
                     <h2 className="font-bold mb-6 space-y-2">
                       <p className="text-4xl md:text-5xl block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
-                        참가 신청
-                      </p>
-                      <p className="text-2xl lg:text-3xl font-mono lg:block" style={{width: '18ch'}}>
-                        얼리버드 참가신청
+                        참가 신청 마감
                       </p>
                     </h2>
                     <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                      얼리버드 참가신청을 <span className={''}>2025년 1월 2일</span>부터 <span className={''}>2025년 3월 31일</span>까지
-                      진행합니다. 선착순 신청이며 참가비 납부를 완료하여야만 접수가 완료됩니다. 얼리버드 참가신청은 조기 마감될 수 있습니다. 바 시티즌 코리아 디스코드를 통해 최신 정보를 확인하세요.
+                      현재 모든 참가 신청이 마감되었습니다. 많은 관심에 감사드립니다.
                     </p>
                     <div className="flex flex-col gap-6 w-full lg:flex-row lg:w-auto justify-start">
-                      <a
-                          href={REGISTER_LINK}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-8 py-4 bg-white text-purple-900 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors justify-center"
-                      >
-                        지금 등록하기
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
-                        </svg>
-                      </a>
-
                       <a
                           href={DISCORD_LINK}
                           target="_blank"
@@ -447,15 +427,6 @@ const GameMeetup = () => {
                         <span>Discord 참가하기</span>
                       </a>
                     </div>
-                  </div>
-                </div>
-
-                {/* Additional Info */}
-                <div className="relative z-10 mt-12 pt-12 border-t border-white border-opacity-10">
-                  <div className="flex flex-wrap gap-x-12 gap-y-4 text-sm text-gray-400">
-                    <p>• 한국어 진행</p>
-                    <p>• 19세 미만 참석 불가</p>
-                    <p>• 반려동물 입장 불가</p>
                   </div>
                 </div>
               </div>
