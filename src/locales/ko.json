@@ -1,23 +1,56 @@
 {
+  "event": {
+    "registrationOpen": true
+  },
   "nav": {
     "brand": "BAR CITIZEN KOREA",
     "menu": {
       "intro": "소개",
       "info": "정보",
       "location": "위치",
-      "faq": "FAQ"
+      "faq": "자주하는 질문"
     }
   },
   "hero": {
-    "subtitle": "STAR CITIZEN MEETUP — 2025.05.03",
+    "subtitle": "STAR CITIZEN MEETUP — 2026.05.09",
     "title": {
       "line1": "BAR",
       "line2": "CITIZEN",
       "line3": "KOREA"
     },
-    "description": "Star Citizen 파일럿들의 특별한 오프라인 모임이 펼쳐집니다. 게임에 관한 이야기들을 함께 나누며 우주의 경험을 공유하세요.",
-    "status": "참가 신청이 마감되었습니다",
-    "cta": "Discord 커뮤니티 참가하기 →"
+    "description": "Star Citizen 파일럿들의 특별한 오프라인 모임이 펼쳐집니다. 게임에 관한 이야기들을 함께 나누며 우주의 경험을 공유하세요."
+  },
+  "status": {
+    "open": {
+      "title": "지금 참가 신청하세요!",
+      "description": "선착순 100명 한정! 놓치지 마세요. 지금 바로 참가 신청을 완료하세요.",
+      "buttons": [
+        {
+          "text": "참가 신청하기",
+          "url": "https://forms.gle/JCBPWmQX58RHg9Vo7",
+          "variant": "primary",
+          "icon": "ticket"
+        },
+        {
+          "text": "Discord",
+          "url": "https://discord.gg/T2wgvYk",
+          "variant": "secondary",
+          "icon": "discord"
+        }
+      ]
+    },
+    "closed": {
+      "title": "참가 신청이 마감되었습니다",
+      "description": "많은 관심에 감사드립니다. Discord 커뮤니티를 통해 최신 소식을 받아보세요.",
+      "buttons": [
+        {
+          "text": "Discord 커뮤니티 참가하기",
+          "url": "https://discord.gg/T2wgvYk",
+          "variant": "primary",
+          "icon": "discord"
+        }
+      ]
+    }
   },
   "eventInfo": {
     "title": "행사 정보",
@@ -25,27 +58,27 @@
       {
         "label": "DATE",
         "number": "01",
-        "title": "2025년 5월 3일",
-        "subtitle": "19:00 - 02:00"
+        "title": "2026년 5월 9일",
+        "subtitle": "18:00 - 00:00 (예정)"
       },
       {
         "label": "LOCATION",
         "number": "02",
-        "title": "카페 노웨어",
-        "subtitle": "서울 송파구 가락로 84, 지하 1층",
+        "title": "신사펍 발산",
+        "subtitle": "서울 강서구 마곡중앙6로 69 3층 ",
         "note": "※ 참가 신청자만 방문 가능"
       },
       {
         "label": "CAPACITY",
         "number": "03",
-        "title": "80명",
+        "title": "100명",
         "subtitle": "선착순 모집"
       },
       {
         "label": "FEE",
         "number": "04",
-        "title": "70,000원",
-        "subtitle": "명찰, 간식 제공"
+        "title": "120,000원",
+        "subtitle": "명찰, 음식 및 음료 제공"
       }
     ]
   },
@@ -53,35 +86,35 @@
     "title": "프로그램",
     "items": [
       {
-        "icon": "🍽️",
+        "icon": "food",
         "title": "간식 시간",
         "description": "합석한 사람과 함께 음식을 고르고 나눠먹는다면 좋은 시작이 될거에요."
       },
       {
-        "icon": "💬",
+        "icon": "chat",
         "title": "정보 교류",
         "description": "스타 시티즌의 새로운 소식에 대해 이야기를 나누고 꿀팁을 서로 공유할 수 있어요."
       },
       {
-        "icon": "🎮",
+        "icon": "game",
         "title": "친목 도모",
         "description": "혼자 노는 것은 이제 그만. 보드 게임을 통해 새로운 친구를 사귈 수 있어요."
       }
     ]
   },
   "location": {
-    "title": "위치"
+    "title": "위치",
+    "coordinates": {
+      "lat": 37.560370,
+      "lng": 126.835114
+    }
   },
   "faq": {
-    "title": "FAQ",
+    "title": "자주하는 질문",
     "items": [
       {
         "question": "참가 신청을 안했는데 참석 할 수 있나요?",
         "answer": "죄송합니다. 공간 문제로 인하여 참가 신청을 하지 않은 분은 참석할 수 없습니다."
-      },
-      {
-        "question": "참가 신청을 추가로 받나요?",
-        "answer": "현재 참가자가 확정되어 추가 신청을 받지 않습니다."
       },
       {
         "question": "참가 연령제한이 있나요?",
@@ -93,7 +126,7 @@
       },
       {
         "question": "주차는 가능한가요?",
-        "answer": "대중교통 이용을 권장합니다. 하지만 부득이 차량을 가져오셔야 하는 분들을 위하여 인근 공용주차장을 안내해드릴 예정입니다. (주차비 지원 없음)"
+        "answer": "대중교통을 추천드립니다! 주차장이 있으나 제한된 공간으로 주차가 불가할 수 있으며 주차비는 지원되지 않습니다."
       },
       {
         "question": "현장 취소가 가능한가요?",
@@ -101,13 +134,13 @@
       },
       {
         "question": "저녁 식사도 제공하나요?",
-        "answer": "🍗과 🍕와 함께합니다. 이번 행사에서는 자유로운 소통과 참여를 위하여 치킨과 피자로 가볍게 준비할 예정입니다."
+        "answer": "몇 가지 음식과 음료 (맥주 포함)이 제공됩니다. 행사 당일 늦지 않게 도착해주세요!"
       }
     ]
   },
   "footer": {
     "brand": "바 시티즌 코리아",
-    "description": "Star Citizen 한국 커뮤니티",
+    "description": "바 시티즌 코리아는 2019년 부터 시작된 스타 시티즌을 좋아하는 유저들의 모임입니다.",
     "copyright": "© 2025 Bar Citizen Korea. All rights reserved."
   }
 }

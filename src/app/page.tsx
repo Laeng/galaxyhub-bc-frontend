@@ -2,6 +2,8 @@
 
 import { Navigation } from '@/components/designs/Navigation';
 import Map from '@/components/map/Map';
+import { StatusBanner } from '@/components/StatusBanner';
+import { ProgramIcon, ProgramIconType } from '@/components/ProgramIcon';
 import { useTranslation } from '@/hooks/useTranslation';
 
 export default function HomePage() {
@@ -34,10 +36,10 @@ export default function HomePage() {
               <div className="text-sm font-mono text-primary mb-8 tracking-wider">
                 {t.hero.subtitle}
               </div>
-              <h1 className="text-7xl lg:text-9xl font-bold leading-none mb-8 tracking-tight">
-                {t.hero.title.line1}<br />
-                {t.hero.title.line2}<br />
-                {t.hero.title.line3}
+              <h1 className="text-7xl lg:text-9xl font-black space-y-0 mb-8 tracking-tight flex flex-col">
+                <span>{t.hero.title.line1}</span>
+                <span>{t.hero.title.line2}</span>
+                <span>{t.hero.title.line3}</span>
               </h1>
               <div className="w-24 h-1 bg-primary mb-8"></div>
               <p className="text-2xl lg:text-3xl text-base-content/80 leading-relaxed max-w-3xl font-light">
@@ -46,21 +48,11 @@ export default function HomePage() {
             </div>
 
             {/* Status Banner */}
-            <div className="bg-error text-error-content px-8 py-6 rounded-2xl inline-block mb-12">
-              <div className="text-xl font-bold">{t.hero.status}</div>
-            </div>
-
-            {/* CTA */}
-            <div>
-              <a
-                href="https://discord.gg/gqpd3p6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary btn-lg text-lg"
-              >
-                {t.hero.cta}
-              </a>
-            </div>
+            <StatusBanner
+              isOpen={t.event.registrationOpen}
+              openContent={t.status.open}
+              closedContent={t.status.closed}
+            />
           </div>
         </div>
       </section>
@@ -101,7 +93,9 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {t.program.items.map((item, index) => (
                 <div key={index}>
-                  <div className="text-6xl font-bold mb-4">{item.icon}</div>
+                  <div className="mb-6 text-primary">
+                    <ProgramIcon type={item.icon as ProgramIconType} className="w-16 h-16" />
+                  </div>
                   <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
                   <p className="text-base-content/70 leading-relaxed">
                     {item.description}
@@ -119,7 +113,7 @@ export default function HomePage() {
           <div className="max-w-5xl">
             <h2 className="text-5xl lg:text-6xl font-bold mb-12">{t.location.title}</h2>
             <div className="rounded-3xl overflow-hidden shadow-2xl h-[500px]">
-              <Map />
+              <Map lat={t.location.coordinates.lat} lng={t.location.coordinates.lng} />
             </div>
           </div>
         </div>

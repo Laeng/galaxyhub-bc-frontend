@@ -3,11 +3,13 @@
 import {useEffect, useRef} from "react";
 import * as process from "process";
 
-export default function Map() {
-    const container = useRef<HTMLDivElement>(null);
+interface MapProps {
+    lat: number;
+    lng: number;
+}
 
-    const lat = 37.500330;
-    const lon = 127.105728;
+export default function Map({ lat, lng }: MapProps) {
+    const container = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const script = document.createElement("script");
@@ -19,11 +21,9 @@ export default function Map() {
         const onLoadMap = () => {
             window.kakao.maps.load(() => {
                 const options = {
-                    center: new window.kakao.maps.LatLng(lat, lon),
+                    center: new window.kakao.maps.LatLng(lat, lng),
                     level: 3,
                 };
-                new window.kakao.maps.Map(container.current ?? document.createElement('div'), options);
-
                 const map = new window.kakao.maps.Map(container.current ?? document.createElement('div'), options);
                 const zoom = new window.kakao.maps.ZoomControl();
 
@@ -38,7 +38,7 @@ export default function Map() {
         };
 
         script.addEventListener("load", onLoadMap);
-    }, [lat, lon]);
+    }, [lat, lng]);
 
     return (
         <div ref={container} className={
