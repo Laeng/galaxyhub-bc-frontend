@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "brand": "BAR CITIZEN KOREA",
+    "menu": {
+      "intro": "소개",
+      "info": "정보",
+      "location": "위치",
+      "faq": "FAQ"
+    }
+  },
+  "hero": {
+    "subtitle": "STAR CITIZEN MEETUP — 2025.05.03",
+    "title": {
+      "line1": "BAR",
+      "line2": "CITIZEN",
+      "line3": "KOREA"
+    },
+    "description": "Star Citizen 파일럿들의 특별한 오프라인 모임이 펼쳐집니다. 게임에 관한 이야기들을 함께 나누며 우주의 경험을 공유하세요.",
+    "status": "참가 신청이 마감되었습니다",
+    "cta": "Discord 커뮤니티 참가하기 →"
+  },
+  "eventInfo": {
+    "title": "행사 정보",
+    "items": [
+      {
+        "label": "DATE",
+        "number": "01",
+        "title": "2025년 5월 3일",
+        "subtitle": "19:00 - 02:00"
+      },
+      {
+        "label": "LOCATION",
+        "number": "02",
+        "title": "카페 노웨어",
+        "subtitle": "서울 송파구 가락로 84, 지하 1층",
+        "note": "※ 참가 신청자만 방문 가능"
+      },
+      {
+        "label": "CAPACITY",
+        "number": "03",
+        "title": "80명",
+        "subtitle": "선착순 모집"
+      },
+      {
+        "label": "FEE",
+        "number": "04",
+        "title": "70,000원",
+        "subtitle": "명찰, 간식 제공"
+      }
+    ]
+  },
+  "program": {
+    "title": "프로그램",
+    "items": [
+      {
+        "icon": "🍽️",
+        "title": "간식 시간",
+        "description": "합석한 사람과 함께 음식을 고르고 나눠먹는다면 좋은 시작이 될거에요."
+      },
+      {
+        "icon": "💬",
+        "title": "정보 교류",
+        "description": "스타 시티즌의 새로운 소식에 대해 이야기를 나누고 꿀팁을 서로 공유할 수 있어요."
+      },
+      {
+        "icon": "🎮",
+        "title": "친목 도모",
+        "description": "혼자 노는 것은 이제 그만. 보드 게임을 통해 새로운 친구를 사귈 수 있어요."
+      }
+    ]
+  },
+  "location": {
+    "title": "위치"
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "참가 신청을 안했는데 참석 할 수 있나요?",
+        "answer": "죄송합니다. 공간 문제로 인하여 참가 신청을 하지 않은 분은 참석할 수 없습니다."
+      },
+      {
+        "question": "참가 신청을 추가로 받나요?",
+        "answer": "현재 참가자가 확정되어 추가 신청을 받지 않습니다."
+      },
+      {
+        "question": "참가 연령제한이 있나요?",
+        "answer": "만 19세 이상이면 누구나 참여 가능합니다."
+      },
+      {
+        "question": "저는 특정 음식을 먹지 못합니다.",
+        "answer": "죄송합니다. 본 행사는 채식, 할랄등 맞춤 식단과 식품 알러지 성분표시를 제공해드리지 않습니다."
+      },
+      {
+        "question": "주차는 가능한가요?",
+        "answer": "대중교통 이용을 권장합니다. 하지만 부득이 차량을 가져오셔야 하는 분들을 위하여 인근 공용주차장을 안내해드릴 예정입니다. (주차비 지원 없음)"
+      },
+      {
+        "question": "현장 취소가 가능한가요?",
+        "answer": "현장 취소는 불가능합니다. 참가가 어려우신 경우 디스코드를 통해 연락주시기 바랍니다. 환불은 기간에 따라 불가할 수 있습니다."
+      },
+      {
+        "question": "저녁 식사도 제공하나요?",
+        "answer": "🍗과 🍕와 함께합니다. 이번 행사에서는 자유로운 소통과 참여를 위하여 치킨과 피자로 가볍게 준비할 예정입니다."
+      }
+    ]
+  },
+  "footer": {
+    "brand": "바 시티즌 코리아",
+    "description": "Star Citizen 한국 커뮤니티",
+    "copyright": "© 2025 Bar Citizen Korea. All rights reserved."
+  }
+}

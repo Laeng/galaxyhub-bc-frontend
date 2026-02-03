@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "brand": "BAR CITIZEN KOREA",
+    "menu": {
+      "intro": "Intro",
+      "info": "Info",
+      "location": "Location",
+      "faq": "FAQ"
+    }
+  },
+  "hero": {
+    "subtitle": "STAR CITIZEN MEETUP — 2025.05.03",
+    "title": {
+      "line1": "BAR",
+      "line2": "CITIZEN",
+      "line3": "KOREA"
+    },
+    "description": "Join us for a special Star Citizen pilots offline meetup. Share your experience in the verse and discuss the game with fellow pilots.",
+    "status": "Registration Closed",
+    "cta": "Join Discord Community →"
+  },
+  "eventInfo": {
+    "title": "Event Information",
+    "items": [
+      {
+        "label": "DATE",
+        "number": "01",
+        "title": "May 3rd, 2025",
+        "subtitle": "19:00 - 02:00"
+      },
+      {
+        "label": "LOCATION",
+        "number": "02",
+        "title": "Cafe Nowhere",
+        "subtitle": "84 Garak-ro, Songpa-gu, Seoul, B1",
+        "note": "※ Registered attendees only"
+      },
+      {
+        "label": "CAPACITY",
+        "number": "03",
+        "title": "80 people",
+        "subtitle": "First come, first served"
+      },
+      {
+        "label": "FEE",
+        "number": "04",
+        "title": "₩70,000",
+        "subtitle": "Name tag & Snacks included"
+      }
+    ]
+  },
+  "program": {
+    "title": "Program",
+    "items": [
+      {
+        "icon": "🍽️",
+        "title": "Snack Time",
+        "description": "Share food with people at your table - a great way to start conversations and make new friends."
+      },
+      {
+        "icon": "💬",
+        "title": "Information Exchange",
+        "description": "Discuss the latest Star Citizen news and share your tips and tricks with other pilots."
+      },
+      {
+        "icon": "🎮",
+        "title": "Networking",
+        "description": "No more flying solo! Make new friends through board games and group activities."
+      }
+    ]
+  },
+  "location": {
+    "title": "Location"
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Can I attend without registration?",
+        "answer": "Sorry, due to space limitations, only registered attendees can participate."
+      },
+      {
+        "question": "Are you accepting additional registrations?",
+        "answer": "Registration is currently closed as we have reached capacity."
+      },
+      {
+        "question": "Is there an age restriction?",
+        "answer": "Anyone 19 years or older can participate."
+      },
+      {
+        "question": "I have dietary restrictions.",
+        "answer": "Unfortunately, we cannot provide vegetarian, halal, or allergen information for this event."
+      },
+      {
+        "question": "Is parking available?",
+        "answer": "We recommend using public transportation. However, we will provide information about nearby public parking lots for those who need to drive. (Parking fees not covered)"
+      },
+      {
+        "question": "Can I cancel on-site?",
+        "answer": "On-site cancellation is not possible. If you cannot attend, please contact us via Discord. Refunds may not be available depending on the timing."
+      },
+      {
+        "question": "Will dinner be provided?",
+        "answer": "🍗 and 🍕 will be served! We're keeping it casual with chicken and pizza to encourage mingling and participation."
+      }
+    ]
+  },
+  "footer": {
+    "brand": "Bar Citizen Korea",
+    "description": "Star Citizen Korean Community",
+    "copyright": "© 2025 Bar Citizen Korea. All rights reserved."
+  }
+}
