@@ -3,12 +3,13 @@
 import { useState, useEffect } from 'react';
 import koTranslations from '@/locales/ko.json';
 import enTranslations from '@/locales/en.json';
+import type { TranslationSchema } from '@/locales/types';
 
 export type Locale = 'ko' | 'en';
 
-const translations = {
-  ko: koTranslations,
-  en: enTranslations
+const translations: Record<Locale, TranslationSchema> = {
+  ko: koTranslations as TranslationSchema,
+  en: enTranslations as TranslationSchema
 };
 
 export function useTranslation(initialLocale: Locale = 'ko') {
