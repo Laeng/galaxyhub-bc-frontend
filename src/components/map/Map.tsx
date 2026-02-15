@@ -1,7 +1,6 @@
 'use client';
 
 import {useEffect, useRef} from "react";
-import * as process from "process";
 
 interface MapProps {
     lat: number;
@@ -14,30 +13,29 @@ export default function Map({ lat, lng }: MapProps) {
     useEffect(() => {
         const script = document.createElement("script");
         script.async = true;
-        script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_KEY}&autoload=false`;
+        script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_NAVER_MAP_CLIENT_ID}`;
 
         document.head.appendChild(script);
 
         const onLoadMap = () => {
-            window.kakao.maps.load(() => {
-                const options = {
-                    center: new window.kakao.maps.LatLng(lat, lng),
-                    level: 3,
-                };
-                const map = new window.kakao.maps.Map(container.current ?? document.createElement('div'), options);
-                const zoom = new window.kakao.maps.ZoomControl();
+            if (!container.current || !window.naver) return;
 
-                map.addControl(zoom, window.kakao.maps.ControlPosition.RIGHT);
+            const map = new window.naver.maps.Map(container.current, {
+                center: new window.naver.maps.LatLng(lat, lng),
+                zoom: 15,
+            });
 
-                const marker = new window.kakao.maps.Marker({
-                    position: map.getCenter()
-                });
-
-                marker.setMap(map);
+            new window.naver.maps.Marker({
+                position: new window.naver.maps.LatLng(lat, lng),
+                map: map,
             });
         };
 
         script.addEventListener("load", onLoadMap);
+
+        return () => {
+            script.removeEventListener("load", onLoadMap);
+        };
     }, [lat, lng]);
 
     return (
@@ -56,7 +54,7 @@ export default function Map({ lat, lng }: MapProps) {
 declare global {
     /* eslint-disable @typescript-eslint/no-explicit-any */
     interface Window {
-        kakao: {
+        naver: {
             maps: any;
         };
     }
