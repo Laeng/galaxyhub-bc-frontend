@@ -11,22 +11,26 @@ export default function Map({ lat, lng }: MapProps) {
     const container = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+        const mapId = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_STYLE_ID;
+
         const script = document.createElement("script");
         script.async = true;
-        script.src = `https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_NAVER_MAP_CLIENT_ID}`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&map_ids=${mapId}`;
 
         document.head.appendChild(script);
 
         const onLoadMap = () => {
-            if (!container.current || !window.naver) return;
+            if (!container.current || !window.google) return;
 
-            const map = new window.naver.maps.Map(container.current, {
-                center: new window.naver.maps.LatLng(lat, lng),
+            const map = new window.google.maps.Map(container.current, {
+                center: { lat, lng },
                 zoom: 15,
+                mapId: mapId,
             });
 
-            new window.naver.maps.Marker({
-                position: new window.naver.maps.LatLng(lat, lng),
+            new window.google.maps.marker.AdvancedMarkerElement({
+                position: { lat, lng },
                 map: map,
             });
         };
@@ -49,14 +53,4 @@ export default function Map({ lat, lng }: MapProps) {
             </p>
         </div>
     );
-}
-
-declare global {
-    /* eslint-disable @typescript-eslint/no-explicit-any */
-    interface Window {
-        naver: {
-            maps: any;
-        };
-    }
-    /* eslint-enable @typescript-eslint/no-explicit-any */
 }
