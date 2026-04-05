@@ -2,6 +2,12 @@
 
 import {useEffect, useRef} from "react";
 
+declare global {
+    interface Window {
+        google: typeof google;
+    }
+}
+
 interface MapProps {
     lat: number;
     lng: number;
